@@ -1,0 +1,6 @@
+.search-wrap {
+  border: 0.1rem solid #280b56;
+  background-color: #f1f3f4; }
+  .search-wrap button {
+    padding: 1.5rem;
+    border: none; }

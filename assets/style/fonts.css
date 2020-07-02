@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'National-2 Regular';
+  src: url("../fonts/National2-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'National-2 Bold';
+  src: url("../fonts/National2-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'National-2 Medium';
+  src: url("../fonts/National2-Medium.woff") format("woff"); }

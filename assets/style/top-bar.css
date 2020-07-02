@@ -1,0 +1,15 @@
+.top-bar {
+  padding: 0.8rem 0rem;
+  position: relative; }
+  .top-bar-logo-img {
+    max-width: 16.6rem;
+    height: auto; }
+  .top-bar-col {
+    display: flex;
+    align-items: center; }
+    .top-bar-col:nth-child(1) {
+      justify-content: flex-start; }
+    .top-bar-col:nth-child(2) {
+      justify-content: center; }
+    .top-bar-col:nth-child(3) {
+      justify-content: flex-end; }

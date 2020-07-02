@@ -1,0 +1,19 @@
+.header-menu {
+  position: absolute;
+  bottom: -100%;
+  right: 0; }
+  .header-menu__container {
+    display: flex;
+    position: relative; }
+    .header-menu__container ul {
+      list-style-type: none; }
+
+.header-language-switcher {
+  padding-right: 6.7rem; }
+  .header-language-switcher button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.6rem; }
+
+.header-main {
+  padding-bottom: 40rem; }

@@ -1,0 +1,105 @@
+@media screen and (max-width: 991px){
+    html{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .reasons-to-work__wrap{
+        flex-wrap: wrap;
+        &-block{
+            flex: 1 0 100%;
+            img{
+                margin-left: 0;
+            }
+        }
+    }
+    .burger-menu{
+        position: fixed;
+        right: 2.7rem;
+        top: 8rem;
+    }
+    .header-menu{
+        position: fixed;
+        top: 14.25rem;
+        right: 3rem;
+    }
+    .header-language-switcher{
+        padding-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 568px){
+    .reasons-to-work__wrap{
+        &-block{
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    .header .container{
+        padding: 0;
+    }
+    .footer{
+        padding: 3.25rem 0rem;
+        &-col{
+            padding-left: 15px !important;
+            margin-bottom: 2rem;
+            &:first-child{
+                display: flex;
+                flex-direction: column;
+                order: 2;
+                margin-bottom: 0;
+                ul{
+                    display: flex;
+                    flex-direction: column;  
+                    order: -1;
+                    li{
+                        &:nth-child(1){
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+            &:nth-child(2){
+                order: -1;
+                justify-content: flex-start;
+            }
+            &:last-child{
+                display: flex;
+                flex-direction: column;
+                order: 1;
+            }
+        }
+        &__menu{
+            flex-direction: column;
+            align-items: flex-start !important;
+            li{
+                margin-bottom: 2rem;
+                a{
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &__social-menu{
+            a{
+                &:last-child{
+                    margin-left: 0;
+                }
+            }
+            img{
+                width: 3rem;
+            }
+        }
+        .footer__email-link, .footer__copyright-span{
+            a{
+                margin-left: 0;
+            }
+            margin-top: 2rem;
+        }
+    }
+}

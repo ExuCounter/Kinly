@@ -1,0 +1,23 @@
+.search{
+    &-wrap{
+        border: 0.1rem solid #280b56;
+        background-color: #f1f3f4;
+        display: flex;
+        align-items: center;
+        button{
+            padding: 1.5rem;
+            border: none;
+        }
+        input{
+            font-size: 1.6rem;
+            font-family: $font-bold;
+            background-color: transparent;
+            border: none;
+            color: #8c80a6;
+            width: 100%;
+            &::placeholder{
+                color: #8c80a6;
+            }
+        }
+    }
+}

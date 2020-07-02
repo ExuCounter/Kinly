@@ -1,10 +1,8 @@
-@import 'fonts.scss';
-
-$light-gray: #626262;
-$lighter-gray: #f8f9fb;
-$blue: #1565ea;
-$nav-links: #87858f;
-$gray: #6a6c75;
+$main-color: #280B56;
+$white: #FFF;
+$second-color: #E8704D;
+$light-blue: #c1ecf9;
+$light-gray: #e1e7ea;
 
 $light: 300;
 $regular: 400;
@@ -12,15 +10,23 @@ $medium: 500;
 $semibold: 600;
 $bold: 700;
 
+$font-regular: 'National-2 Regular', sans-serif;
+$font-medium: 'National-2 Medium', sans-serif;
+$font-bold: 'National-2 Bold', sans-serif;
+
 *{
     margin: 0;
     padding: 0;
     font-weight: 400;
-    font-family: $font-raleway;
+}
+
+.header .container{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .container{
-    max-width: 1400px;
+    max-width: 791px;
     margin: 0 auto;
 }
 
@@ -30,4 +36,20 @@ html{
 
 body{
     font-size: 100%;
+    font-family: $font-regular;
+}
+
+.home-page .header-main{
+    background: url('../img/personal.png');
+}
+
+h1{
+    font-size: 3.1rem;
+    color: $main-color;
+    font-family: $font-bold;
+    text-align: center;
+}
+
+button, input{
+    outline: none !important;
 }

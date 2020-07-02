@@ -1,0 +1,21 @@
+.top-bar{
+    padding: 0.8rem 0rem;
+    position: relative;
+    &-logo-img{
+        max-width: 16.6rem;
+        height: auto;
+    }
+    &-col{
+        display: flex;
+        align-items: center;
+        &:nth-child(1){
+            justify-content: flex-start;
+        }
+        &:nth-child(2){
+            justify-content: center;
+        }
+        &:nth-child(3){
+            justify-content: flex-end;
+        }
+    }
+}
