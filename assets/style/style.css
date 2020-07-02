@@ -294,7 +294,8 @@ button, input {
   align-items: center; }
   .search-wrap button {
     padding: 1.5rem;
-    border: none; }
+    border: none;
+    background-color: transparent; }
   .search-wrap input {
     font-size: 1.6rem;
     font-family: "National-2 Bold", sans-serif;
