@@ -34,5 +34,5 @@ h2 {
   h2.colored {
     color: #280B56; }
 
-button, input {
+button, input, select {
   outline: none !important; }

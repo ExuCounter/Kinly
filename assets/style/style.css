@@ -46,7 +46,7 @@ h2 {
   h2.colored {
     color: #280B56; }
 
-button, input {
+button, input, select {
   outline: none !important; }
 
 @font-face {
@@ -311,6 +311,79 @@ button, input {
 .join-our-team-page .search h2 {
   margin: 8.2rem 0rem 4.3rem 0rem; }
 
+.join-our-team-page .search-wrap {
+  margin-bottom: 4rem; }
+
+.select-team {
+  margin-bottom: 4rem; }
+  .select-team__wrap {
+    padding: 2.5rem 1.3rem 2.5rem 2.5rem;
+    background-color: #280B56;
+    display: flex;
+    flex-direction: row; }
+    .select-team__wrap button {
+      white-space: nowrap;
+      padding-left: 4rem;
+      padding-right: 4rem; }
+  .select-team__select-input {
+    display: block;
+    width: 100%;
+    padding: 1.375rem 1.6rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #280B56;
+    font-family: "National-2 Medium", sans-serif;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .55rem;
+    margin-right: 2.8rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    cursor: pointer;
+    background: url(../img/arrow-down.svg) no-repeat right #fff;
+    -webkit-appearance: none;
+    background-position-x: 94%; }
+    .select-team__select-input option {
+      font-size: 1.6rem;
+      cursor: pointer; }
+
+.join-team-cards {
+  margin-bottom: 6rem; }
+  .join-team-cards .card {
+    border: none;
+    margin-bottom: 2.4rem; }
+    .join-team-cards .card__inner {
+      box-shadow: 0.1rem 0.1rem 0.9rem #e5e5e5;
+      background-color: #f1f3f4;
+      padding: 2.6rem; }
+      .join-team-cards .card__inner-title {
+        font-size: 2.5rem;
+        color: #280B56;
+        font-family: "National-2 Bold", sans-serif;
+        margin-bottom: 3.5rem;
+        display: block; }
+      .join-team-cards .card__inner-tags {
+        font-size: 1.6rem;
+        color: #8c80a6;
+        font-family: "National-2 Medium", sans-serif;
+        line-height: 2rem; }
+      .join-team-cards .card__inner a {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 1.2rem;
+        padding-bottom: 1.2rem;
+        border: solid 0.1rem #E8704D;
+        background-color: transparent;
+        transition: 0.2s ease-in-out;
+        color: #E8704D;
+        text-decoration: none; }
+        .join-team-cards .card__inner a:hover {
+          color: #FFF;
+          background-color: #E8704D; }
+
 .search form {
   position: relative; }
 
@@ -384,7 +457,9 @@ button, input {
   .banner-inner h2 {
     font-size: 3.9rem;
     font-family: "National-2 Bold", sans-serif;
-    padding-bottom: 2.3rem; }
+    padding-bottom: 2.3rem;
+    color: #FFF;
+    text-align: left; }
   .banner-inner p {
     font-size: 1.6rem;
     font-family: "National-2 Regular", sans-serif; }
@@ -396,7 +471,23 @@ button, input {
   top: -4.25rem; }
 
 .join-our-team-banner {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem;
+  text-align: left; }
+
+.footer-banner .banner-inner {
+  padding: 4rem 0rem; }
+
+.footer-banner h2 {
+  font-size: 3.1rem;
+  text-align: center;
+  padding-bottom: 0; }
+
+.footer-banner a.default-btn {
+  padding-left: 5.2rem;
+  padding-right: 5.2rem;
+  margin-top: 1.5rem;
+  color: #FFF;
+  text-decoration: none; }
 
 @media screen and (max-width: 991px) {
   html {
