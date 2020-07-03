@@ -14,9 +14,12 @@ searchWraps.forEach(search=>{
             search.querySelector('.search-wrap__close-btn').outerHTML = '';
             search.closest('.search').querySelector('.search-menu').classList.remove('active');
         }
-
+        document.querySelector('body').addEventListener('click', (e)=>{
+            if(!(e.target.closest('.search-menu')) && !(e.target == search.querySelector('input'))){
+                search.closest('.search').querySelector('.search-menu').classList.remove('active');
+            }
+        });
         let searchWrapCloseButtons = document.querySelectorAll('.search-wrap__close-btn');
-
         searchWrapCloseButtons.forEach(btn=>{
             btn.onclick = (e) => {
                 e.preventDefault();
@@ -25,5 +28,10 @@ searchWraps.forEach(search=>{
                 btn.outerHTML = '';
             }
         })
+    }
+    search.querySelector('input').onfocus = () =>{
+        if(search.querySelector('.search-wrap__close-btn') && search.querySelector('input').value.length){
+            search.closest('.search').querySelector('.search-menu').classList.add('active');
+        }
     }
 })
