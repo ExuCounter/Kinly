@@ -27,6 +27,7 @@
     span{
     transition: all 0.3s ease-in-out;
     margin-top: -0.9rem;
+    z-index: 111;
         @extend %burger-menu--span;
         &:nth-child(1){
         top: 0em;

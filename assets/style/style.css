@@ -55,7 +55,7 @@ button, input {
   src: url("../fonts/National2-Medium.woff") format("woff"); }
 
 .top-bar {
-  padding: 0.8rem 0rem;
+  padding: 1.6rem 0rem;
   position: relative;
   overflow: hidden; }
   .top-bar-logo-img {
@@ -90,7 +90,8 @@ button, input {
   background-color: #280B56; }
   .burger-menu span {
     transition: all 0.3s ease-in-out;
-    margin-top: -0.9rem; }
+    margin-top: -0.9rem;
+    z-index: 111; }
     .burger-menu span:nth-child(1) {
       top: 0em; }
     .burger-menu span:nth-child(2) {
@@ -142,16 +143,17 @@ button, input {
     transform: rotate(-45deg); } }
 
 .header-menu {
-  position: absolute;
-  top: 100%;
-  right: 0;
+  position: fixed;
+  top: 7.5rem;
+  margin-left: -9.7rem;
   transition: 0.6s ease-in-out;
   height: 0;
   transform: translateY(-200%);
   opacity: 0; }
   .header-menu__container {
     display: flex;
-    position: relative; }
+    position: fixed;
+    z-index: 1; }
     .header-menu__container ul {
       list-style-type: none;
       flex-direction: column;
@@ -173,6 +175,9 @@ button, input {
     opacity: 1;
     height: auto;
     transform: translateY(0%); }
+
+.header__wrap {
+  position: relative; }
 
 .header-language-switcher {
   padding-right: 6.7rem; }

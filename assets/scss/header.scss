@@ -1,15 +1,16 @@
 .header{
     &-menu{
-        position: absolute;
-        top: 100%;
-        right: 0;
+        position: fixed;
+        top: 7.5rem;
+        margin-left: -9.7rem;
         transition: 0.6s ease-in-out;
         height: 0;
         transform: translateY(-200%);
         opacity: 0;
         &__container{
             display: flex;
-            position: relative;
+            position: fixed;
+            z-index: 1;
             ul{
                 list-style-type: none;
                 flex-direction: column;
@@ -36,6 +37,9 @@
             height: auto;
             transform: translateY(0%);
         }
+    }
+    &__wrap{
+        position: relative;
     }
     &-language-switcher{
         padding-right: 6.7rem;
