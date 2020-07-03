@@ -4,6 +4,8 @@
         background-color: #f1f3f4;
         display: flex;
         align-items: center;
+        margin-bottom: -0.5px;
+        position: relative;
         button{
             padding: 1.5rem;
             border: none;
@@ -19,6 +21,50 @@
             &::placeholder{
                 color: #8c80a6;
             }
+        }
+        &__close-btn{
+            font-size: 2rem;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-family: $font-bold;
+        }
+    }
+    &-menu{
+        padding-left: 0;
+        list-style-type: none;
+        display: none;
+        li{
+            border: 0.1rem solid #280b56;
+            background-color: #f1f3f4;
+            font-size: 1.6rem;
+        }
+        &__link{
+            padding: 1.5rem 0rem 1.5rem 3rem;
+            font-size: 1.6rem;
+            padding-left: 2.5rem;
+            text-decoration: none;
+            color: $main-color;
+            font-family: $font-medium;
+            display: block;
+            &:hover{
+                text-decoration: none;
+                color: $white;
+                background-color: $second-color;
+            }
+            &_disabled{
+                color: #767676;
+                padding: 1.5rem 0rem 1.5rem 1.5rem;
+                cursor: default;
+                &:hover{
+                    color: #767676;
+                    background-color: #f1f3f4;
+                }
+            }
+        }
+        &.active{
+            display: block;
         }
     }
 }

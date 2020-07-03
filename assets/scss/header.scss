@@ -42,7 +42,7 @@
         position: relative;
     }
     &-language-switcher{
-        padding-right: 6.7rem;
+        padding-right: 12.7rem;
         button{
             border: none;
             background-color: transparent;
@@ -69,5 +69,7 @@
     }
     &-main{
         padding-bottom: 40rem;
+        background-size: cover;
+        background-position: center !important;
     }
 }

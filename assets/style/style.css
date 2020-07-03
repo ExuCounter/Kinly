@@ -30,9 +30,6 @@ body {
   font-size: 100%;
   font-family: "National-2 Regular", sans-serif; }
 
-.home-page .header-main {
-  background: url("../img/personal.png"); }
-
 h1 {
   font-size: 3.1rem;
   color: #280B56;
@@ -180,7 +177,7 @@ button, input {
   position: relative; }
 
 .header-language-switcher {
-  padding-right: 6.7rem; }
+  padding-right: 12.7rem; }
   .header-language-switcher button {
     border: none;
     background-color: transparent;
@@ -203,7 +200,9 @@ button, input {
         position: absolute; }
 
 .header-main {
-  padding-bottom: 40rem; }
+  padding-bottom: 40rem;
+  background-size: cover;
+  background-position: center !important; }
 
 .footer {
   background-color: #f6f7f8;
@@ -265,6 +264,9 @@ button, input {
 .home-video {
   margin-top: 4rem; }
 
+.home-page .header-main {
+  background: url("../img/personal.png"); }
+
 .reasons-to-work {
   margin-bottom: 9rem; }
   .reasons-to-work__wrap {
@@ -297,7 +299,9 @@ button, input {
   border: 0.1rem solid #280b56;
   background-color: #f1f3f4;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: -0.5px;
+  position: relative; }
   .search-wrap button {
     padding: 1.5rem;
     border: none;
@@ -311,6 +315,43 @@ button, input {
     width: 100%; }
     .search-wrap input::placeholder {
       color: #8c80a6; }
+  .search-wrap__close-btn {
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "National-2 Bold", sans-serif; }
+
+.search-menu {
+  padding-left: 0;
+  list-style-type: none;
+  display: none; }
+  .search-menu li {
+    border: 0.1rem solid #280b56;
+    background-color: #f1f3f4;
+    font-size: 1.6rem; }
+  .search-menu__link {
+    padding: 1.5rem 0rem 1.5rem 3rem;
+    font-size: 1.6rem;
+    padding-left: 2.5rem;
+    text-decoration: none;
+    color: #280B56;
+    font-family: "National-2 Medium", sans-serif;
+    display: block; }
+    .search-menu__link:hover {
+      text-decoration: none;
+      color: #FFF;
+      background-color: #E8704D; }
+    .search-menu__link_disabled {
+      color: #767676;
+      padding: 1.5rem 0rem 1.5rem 1.5rem;
+      cursor: default; }
+      .search-menu__link_disabled:hover {
+        color: #767676;
+        background-color: #f1f3f4; }
+  .search-menu.active {
+    display: block; }
 
 .banner-inner {
   background-color: #280B56;
