@@ -23,6 +23,16 @@ h1 {
   color: #280B56;
   font-family: "National-2 Bold", sans-serif;
   text-align: center; }
+  h1.colored {
+    color: #280B56; }
+
+h2 {
+  font-size: 3.9rem;
+  color: #280B56;
+  font-family: "National-2 Bold", sans-serif;
+  text-align: center; }
+  h2.colored {
+    color: #280B56; }
 
 button, input {
   outline: none !important; }

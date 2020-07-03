@@ -35,6 +35,16 @@ h1 {
   color: #280B56;
   font-family: "National-2 Bold", sans-serif;
   text-align: center; }
+  h1.colored {
+    color: #280B56; }
+
+h2 {
+  font-size: 3.9rem;
+  color: #280B56;
+  font-family: "National-2 Bold", sans-serif;
+  text-align: center; }
+  h2.colored {
+    color: #280B56; }
 
 button, input {
   outline: none !important; }
@@ -295,6 +305,15 @@ button, input {
   .reasons-to-work h1 {
     padding: 8rem 0rem 1.5rem 0rem; }
 
+.join-our-team-page .header-main {
+  background: url("../img/join-our-team.png"); }
+
+.join-our-team-page .search h2 {
+  margin: 8.2rem 0rem 4.3rem 0rem; }
+
+.search form {
+  position: relative; }
+
 .search-wrap {
   border: 0.1rem solid #280b56;
   background-color: #f1f3f4;
@@ -326,12 +345,17 @@ button, input {
 .search-menu {
   padding-left: 0;
   list-style-type: none;
-  display: none; }
+  display: none;
+  position: absolute;
+  top: 5.85rem;
+  left: 0;
+  width: 100%;
+  z-index: 11; }
   .search-menu li {
-    border: 0.1rem solid #280b56;
     background-color: #f1f3f4;
     font-size: 1.6rem; }
   .search-menu__link {
+    border: 0.1rem solid #280b56;
     padding: 1.5rem 0rem 1.5rem 4.5rem !important;
     font-size: 1.6rem;
     padding-left: 2.5rem;

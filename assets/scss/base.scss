@@ -44,6 +44,19 @@ h1{
     color: $main-color;
     font-family: $font-bold;
     text-align: center;
+    &.colored{
+        color: $main-color;
+    }
+}
+
+h2{
+    font-size: 3.9rem;
+    color: $main-color;
+    font-family: $font-bold;
+    text-align: center;
+    &.colored{
+        color: $main-color;
+    }
 }
 
 button, input{
