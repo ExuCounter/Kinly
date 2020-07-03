@@ -332,7 +332,7 @@ button, input {
     background-color: #f1f3f4;
     font-size: 1.6rem; }
   .search-menu__link {
-    padding: 1.5rem 0rem 1.5rem 3rem;
+    padding: 1.5rem 0rem 1.5rem 4.5rem !important;
     font-size: 1.6rem;
     padding-left: 2.5rem;
     text-decoration: none;
@@ -345,7 +345,7 @@ button, input {
       background-color: #E8704D; }
     .search-menu__link_disabled {
       color: #767676;
-      padding: 1.5rem 0rem 1.5rem 1.5rem;
+      padding: 1.5rem 0rem 1.5rem 1.5rem !important;
       cursor: default; }
       .search-menu__link_disabled:hover {
         color: #767676;
