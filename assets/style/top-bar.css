@@ -1,6 +1,7 @@
 .top-bar {
   padding: 0.8rem 0rem;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .top-bar-logo-img {
     max-width: 16.6rem;
     height: auto; }

@@ -17,12 +17,19 @@
     .burger-menu{
         position: fixed;
         right: 2.7rem;
-        top: 8rem;
+        top: calc(100vh - 9rem);
     }
     .header-menu{
         position: fixed;
-        top: 14.25rem;
-        right: 3rem;
+        top: calc(100vh - 27rem);
+        right: -10rem;
+        z-index: 111;
+        transform: translate(0);
+        transition: 0.4s ease-in-out;
+        &.active{
+            top: calc(100vh - 27rem);
+            right: 3rem;
+        }
     }
     .header-language-switcher{
         padding-right: 3rem;
