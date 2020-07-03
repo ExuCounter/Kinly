@@ -46,6 +46,12 @@ h2 {
   h2.colored {
     color: #280B56; }
 
+.main-description {
+  font-size: 1.6rem;
+  font-family: "National-2 Medium", sans-serif;
+  text-align: center;
+  color: #8c80a6; }
+
 button, input, select {
   outline: none !important; }
 
@@ -270,6 +276,9 @@ button, input, select {
   text-align: center;
   color: #FFF;
   border-radius: 0.4rem; }
+  .default-btn:hover {
+    text-decoration: none;
+    color: #FFF; }
 
 .home-video {
   margin-top: 4rem; }
@@ -489,6 +498,82 @@ button, input, select {
   color: #FFF;
   text-decoration: none; }
 
+.vacancy-page .main-title {
+  margin-top: 13rem;
+  margin-bottom: 1.5rem;
+  display: block; }
+
+.vacancy-page .main-description {
+  margin-bottom: 4rem; }
+
+.vacancy-page .vacancy-cards {
+  padding: 4rem 0rem 8rem 0rem; }
+
+.vacancy-page .content a {
+  margin-top: 7.5rem;
+  display: flex;
+  padding: 1.2rem 5rem; }
+  .vacancy-page .content a:hover {
+    text-decoration: none;
+    color: #FFF; }
+
+.vacancy-page .vacancy-cards .card {
+  border: none; }
+  .vacancy-page .vacancy-cards .card .card__inner {
+    padding: 3.4rem 3rem 2.5rem 3rem;
+    background-color: #280B56;
+    color: #FFF;
+    height: 100%; }
+    .vacancy-page .vacancy-cards .card .card__inner-top-text {
+      font-size: 2.5rem;
+      font-weight: 100;
+      display: block; }
+    .vacancy-page .vacancy-cards .card .card__inner-title {
+      display: block;
+      font-size: 2.5rem;
+      font-family: "National-2 Medium", sans-serif;
+      padding-bottom: 1.6rem;
+      padding-top: 1.75rem; }
+    .vacancy-page .vacancy-cards .card .card__inner-desc {
+      font-size: 1.6rem;
+      padding-bottom: 8rem;
+      width: 100%; }
+    .vacancy-page .vacancy-cards .card .card__inner .default-btn {
+      width: 100%;
+      display: block; }
+    .vacancy-page .vacancy-cards .card .card__inner .human-image {
+      margin: 0 auto;
+      display: block;
+      max-width: 12.5rem;
+      height: auto;
+      margin-bottom: 4.5rem; }
+    .vacancy-page .vacancy-cards .card .card__inner.card__contact {
+      text-align: center; }
+      .vacancy-page .vacancy-cards .card .card__inner.card__contact p, .vacancy-page .vacancy-cards .card .card__inner.card__contact span {
+        padding: 0; }
+    .vacancy-page .vacancy-cards .card .card__inner .phone-link {
+      font-size: 1.6rem;
+      color: #FFF;
+      text-decoration: none;
+      border-bottom: 3px solid #c1ecf9;
+      padding-bottom: 1.5px;
+      margin-bottom: 3rem; }
+    .vacancy-page .vacancy-cards .card .card__inner-socials a {
+      margin: 0rem 1.2rem; }
+
+.content {
+  background-color: #f1f3f4;
+  padding: 2.5rem 3.8rem 2.5rem 2.5rem; }
+  .content p, .content span, .content h3 {
+    color: #280B56; }
+  .content p {
+    font-size: 1.6rem; }
+  .content span {
+    font-size: 1.6rem;
+    font-family: "National-2 Medium", sans-serif;
+    margin-top: 2rem;
+    display: block; }
+
 @media screen and (max-width: 991px) {
   html {
     font-size: 9px; } }
@@ -521,6 +606,12 @@ button, input, select {
   .reasons-to-work__wrap-block {
     justify-content: center;
     text-align: center; }
+  .select-team__wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem; }
+    .select-team__wrap select {
+      margin-bottom: 2rem; }
   .header .container {
     padding: 0; }
   .footer {

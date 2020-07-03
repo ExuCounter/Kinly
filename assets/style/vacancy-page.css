@@ -1,0 +1,15 @@
+.vacancy-page .main-title {
+  margin-top: 13rem;
+  margin-bottom: 1.5rem;
+  display: block; }
+
+.vacancy-page .main-description {
+  margin-bottom: 4rem; }
+
+.vacancy-page .vacancy-cards {
+  padding: 4rem 0rem 8rem 0rem; }
+
+.vacancy-page .content a {
+  margin-top: 7.5rem;
+  display: flex;
+  padding: 1.2rem 5rem; }

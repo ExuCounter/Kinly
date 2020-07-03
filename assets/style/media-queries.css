@@ -30,6 +30,12 @@
   .reasons-to-work__wrap-block {
     justify-content: center;
     text-align: center; }
+  .select-team__wrap {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem; }
+    .select-team__wrap select {
+      margin-bottom: 2rem; }
   .header .container {
     padding: 0; }
   .footer {

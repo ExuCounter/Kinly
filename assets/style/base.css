@@ -34,5 +34,11 @@ h2 {
   h2.colored {
     color: #280B56; }
 
+.main-description {
+  font-size: 1.6rem;
+  font-family: "National-2 Medium", sans-serif;
+  text-align: center;
+  color: #8c80a6; }
+
 button, input, select {
   outline: none !important; }

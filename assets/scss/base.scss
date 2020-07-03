@@ -59,6 +59,13 @@ h2{
     }
 }
 
+.main-description{
+    font-size: 1.6rem;
+    font-family: $font-medium;
+    text-align: center;
+    color: #8c80a6;
+}
+
 button, input, select{
     outline: none !important;
 }

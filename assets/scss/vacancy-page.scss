@@ -1,0 +1,82 @@
+.vacancy-page{
+    .main-title{
+        margin-top: 13rem;
+        margin-bottom: 1.5rem;
+        display: block;
+    }
+    .main-description{
+        margin-bottom: 4rem;
+    }
+    .vacancy-cards{
+        padding: 4rem 0rem 8rem 0rem;
+    }
+    .content{
+        a{
+            margin-top: 7.5rem;
+            display: flex;
+            padding: 1.2rem 5rem;
+            &:hover{
+                text-decoration: none;
+                color: $white;
+            }
+        }
+    }
+    .vacancy-cards{
+        .card{
+            border: none;
+            .card__inner{
+                padding: 3.4rem 3rem 2.5rem 3rem;
+                background-color: $main-color;
+                color: $white;
+                height: 100%;
+                &-top-text{
+                    font-size: 2.5rem;
+                    font-weight: 100;
+                    display: block;
+                }
+                &-title{
+                    display: block;
+                    font-size: 2.5rem;
+                    font-family: $font-medium;
+                    padding-bottom: 1.6rem;
+                    padding-top: 1.75rem;
+                }
+                &-desc{
+                    font-size: 1.6rem;
+                    padding-bottom: 8rem;
+                    width: 100%;
+                }
+                .default-btn{
+                    width: 100%;
+                    display: block;
+                }
+                .human-image{
+                    margin: 0 auto;
+                    display: block;
+                    max-width: 12.5rem;
+                    height: auto;
+                    margin-bottom: 4.5rem;
+                }
+                &.card__contact{
+                    text-align: center;
+                    p,span{
+                        padding: 0;
+                    }
+                }
+                .phone-link{
+                    font-size: 1.6rem;
+                    color: $white;
+                    text-decoration: none;
+                    border-bottom: 3px solid #c1ecf9;
+                    padding-bottom: 1.5px;
+                    margin-bottom: 3rem;
+                }
+                &-socials{
+                    a{
+                        margin: 0rem 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
