@@ -12,11 +12,15 @@
   margin: 0 auto; }
 
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  height: 100%; }
 
 body {
   font-size: 100%;
-  font-family: "National-2 Regular", sans-serif; }
+  font-family: "National-2 Regular", sans-serif;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto; }
 
 h1 {
   font-size: 3.1rem;

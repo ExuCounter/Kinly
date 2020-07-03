@@ -24,11 +24,15 @@
   margin: 0 auto; }
 
 html {
-  font-size: 10px; }
+  font-size: 10px;
+  height: 100%; }
 
 body {
   font-size: 100%;
-  font-family: "National-2 Regular", sans-serif; }
+  font-family: "National-2 Regular", sans-serif;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto; }
 
 h1 {
   font-size: 3.1rem;
@@ -568,11 +572,31 @@ button, input, select {
     color: #280B56; }
   .content p {
     font-size: 1.6rem; }
+  .content a {
+    font-family: "National-2 Bold", sans-serif;
+    font-size: 1.6rem;
+    color: #280B56; }
+  .content h3 {
+    font-size: 2.5rem;
+    font-family: "National-2 Bold", sans-serif; }
   .content span {
     font-size: 1.6rem;
-    font-family: "National-2 Medium", sans-serif;
+    font-family: "National-2 Bold", sans-serif;
     margin-top: 2rem;
     display: block; }
+  .content .default-btn {
+    color: #FFF;
+    font-family: "National-2 Regular", sans-serif; }
+
+.contact-page .contact-main {
+  margin: 12rem 0rem 8rem 0rem; }
+  .contact-page .contact-main .container {
+    max-width: 1280px; }
+  .contact-page .contact-main h3 {
+    margin-top: 4rem; }
+  .contact-page .contact-main .contact-phone {
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #c1ecf9; }
 
 @media screen and (max-width: 991px) {
   html {
@@ -600,7 +624,11 @@ button, input, select {
       top: calc(100vh - 27rem);
       right: 3rem; }
   .header-language-switcher {
-    padding-right: 3rem; } }
+    padding-right: 3rem; }
+  .contact-main {
+    margin: 5rem 0rem 5rem 0rem !important; }
+    .contact-main iframe {
+      height: 35rem !important; } }
 
 @media screen and (max-width: 568px) {
   .reasons-to-work__wrap-block {

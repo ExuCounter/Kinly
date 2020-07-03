@@ -34,6 +34,12 @@
     .header-language-switcher{
         padding-right: 3rem;
     }
+    .contact-main{
+        margin: 5rem 0rem 5rem 0rem !important;
+        iframe{
+            height: 35rem !important;
+        }
+    }
 }
 
 @media screen and (max-width: 568px){

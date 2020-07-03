@@ -24,7 +24,11 @@
       top: calc(100vh - 27rem);
       right: 3rem; }
   .header-language-switcher {
-    padding-right: 3rem; } }
+    padding-right: 3rem; }
+  .contact-main {
+    margin: 5rem 0rem 5rem 0rem !important; }
+    .contact-main iframe {
+      height: 35rem !important; } }
 
 @media screen and (max-width: 568px) {
   .reasons-to-work__wrap-block {

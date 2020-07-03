@@ -32,11 +32,16 @@ $font-bold: 'National-2 Bold', sans-serif;
 
 html{
     font-size: 10px;
+    height: 100%;
 }
 
 body{
     font-size: 100%;
     font-family: $font-regular;
+
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 
 h1{
