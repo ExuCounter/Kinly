@@ -28,7 +28,12 @@
   .contact-main {
     margin: 5rem 0rem 5rem 0rem !important; }
     .contact-main iframe {
-      height: 35rem !important; } }
+      height: 35rem !important; }
+  .privacy-page h2 {
+    padding: 5rem 0rem 3.5rem 0rem; }
+  .privacy-page .content {
+    padding-bottom: 4rem;
+    margin-bottom: 5rem; } }
 
 @media screen and (max-width: 568px) {
   .reasons-to-work__wrap-block {

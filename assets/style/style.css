@@ -29,10 +29,7 @@ html {
 
 body {
   font-size: 100%;
-  font-family: "National-2 Regular", sans-serif;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto; }
+  font-family: "National-2 Regular", sans-serif; }
 
 h1 {
   font-size: 3.1rem;
@@ -597,6 +594,20 @@ button, input, select {
   .contact-page .contact-main .contact-phone {
     padding-bottom: 0.5rem;
     border-bottom: 3px solid #c1ecf9; }
+  .contact-page .contact-main #map {
+    height: 100%;
+    width: 100%; }
+
+.privacy-page h2 {
+  padding: 12.2rem 0rem 3.5rem 0rem; }
+
+.privacy-page .content {
+  padding-bottom: 24rem;
+  margin-bottom: 8rem;
+  padding-left: 3rem;
+  padding-right: 3rem; }
+  .privacy-page .content span, .privacy-page .content p {
+    margin-bottom: 1.7rem; }
 
 @media screen and (max-width: 991px) {
   html {
@@ -628,7 +639,12 @@ button, input, select {
   .contact-main {
     margin: 5rem 0rem 5rem 0rem !important; }
     .contact-main iframe {
-      height: 35rem !important; } }
+      height: 35rem !important; }
+  .privacy-page h2 {
+    padding: 5rem 0rem 3.5rem 0rem; }
+  .privacy-page .content {
+    padding-bottom: 4rem;
+    margin-bottom: 5rem; } }
 
 @media screen and (max-width: 568px) {
   .reasons-to-work__wrap-block {

@@ -17,10 +17,7 @@ html {
 
 body {
   font-size: 100%;
-  font-family: "National-2 Regular", sans-serif;
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto; }
+  font-family: "National-2 Regular", sans-serif; }
 
 h1 {
   font-size: 3.1rem;

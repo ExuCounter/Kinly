@@ -90,12 +90,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" disabled class='search-menu__link'>
+                        <a href="javascript:void(0)" class='search-menu__link'>
                             Pre Sales Engineer
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" disabled class='search-menu__link'>
+                        <a href="javascript:void(0)" class='search-menu__link'>
                             Project Manager
                         </a>
                     </li>
@@ -107,7 +107,7 @@
     <section class="home-video">
         <div class="container">
             <div class="video__wrapper">
-				<video src="" width="100%" height="100%" id="home-video" style="object-fit: contain;" poster="assets/img/preview-video.png"></video>
+				<video src="assets/img/home-video.mp4" width="100%" height="100%" id="home-video" style="object-fit: contain; cursor: pointer;" poster="assets/img/preview-video.png"></video>
 			</div>
         </div>
     </section>
@@ -243,6 +243,20 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const homeVideo = document.getElementById('home-video');
+
+        homeVideo.addEventListener('click', function(){
+            if(!(homeVideo.currentTime > 0 && !homeVideo.paused && !homeVideo.ended && homeVideo.readyState > 2)){
+                homeVideo.play();
+            }
+            else{
+                homeVideo.pause();
+            }
+        });
+
+    </script>
 
     <script src='assets/js/script.js'></script>
     <script src='assets/js/search.js'></script>
