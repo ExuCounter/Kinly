@@ -2,6 +2,18 @@
     html{
         font-size: 9px;
     }
+    .apply{
+        &-form{
+            .inputs-col{
+                &__wrap{
+                    label{
+                        position: static;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -52,6 +64,9 @@
 }
 
 @media screen and (max-width: 568px){
+    html{
+        font-size: 10px;
+    }
     .reasons-to-work__wrap{
         &-block{
             justify-content: center;

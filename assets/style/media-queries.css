@@ -1,6 +1,8 @@
 @media screen and (max-width: 991px) {
   html {
-    font-size: 9px; } }
+    font-size: 9px; }
+  .apply-form .inputs-col__wrap label {
+    position: static; } }
 
 @media screen and (max-width: 768px) {
   .reasons-to-work__wrap {
@@ -36,6 +38,8 @@
     margin-bottom: 5rem; } }
 
 @media screen and (max-width: 568px) {
+  html {
+    font-size: 10px; }
   .reasons-to-work__wrap-block {
     justify-content: center;
     text-align: center; }

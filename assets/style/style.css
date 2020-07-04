@@ -29,7 +29,13 @@ html {
 
 body {
   font-size: 100%;
-  font-family: "National-2 Regular", sans-serif; }
+  height: 100%;
+  font-family: "National-2 Regular", sans-serif;
+  display: flex;
+  flex-direction: column; }
+
+footer {
+  margin-top: auto; }
 
 h1 {
   font-size: 3.1rem;
@@ -53,7 +59,7 @@ h2 {
   text-align: center;
   color: #8c80a6; }
 
-button, input, select {
+button, input, select, textarea {
   outline: none !important; }
 
 @font-face {
@@ -609,9 +615,118 @@ button, input, select {
   .privacy-page .content span, .privacy-page .content p {
     margin-bottom: 1.7rem; }
 
+.apply-main h2 {
+  padding-bottom: 1.5rem; }
+
+.apply-form {
+  margin: 0rem 0rem 8rem 0rem; }
+  .apply-form .inputs-col input, .apply-form .inputs-col textarea {
+    padding: 0.85rem;
+    width: 100%; }
+  .apply-form .inputs-col__wrap {
+    background-color: #280B56;
+    padding: 0rem 2.5rem 2.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem; }
+  .apply-form .inputs-col textarea {
+    resize: none; }
+  .apply-form .inputs-col__block {
+    margin-top: 2.25rem;
+    position: relative; }
+    .apply-form .inputs-col__block label {
+      position: absolute;
+      left: -26rem;
+      top: 0;
+      color: #280B56;
+      font-size: 1.6rem;
+      font-family: "National-2 Bold", sans-serif;
+      cursor: pointer; }
+      .apply-form .inputs-col__block label p {
+        font-family: "National-2 Regular", sans-serif; }
+    .apply-form .inputs-col__block input[type='file'] {
+      background-color: #E8704D;
+      width: auto; }
+    .apply-form .inputs-col__block .upload-btn {
+      padding-left: 4.5rem;
+      padding-right: 4.5rem;
+      border-radius: 0px; }
+    .apply-form .inputs-col__block_white {
+      background-color: #FFF;
+      padding: 1.2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .apply-form .inputs-col__block_white p {
+        margin-bottom: 0;
+        font-size: 1.2rem;
+        color: #280B56; }
+        .apply-form .inputs-col__block_white p a {
+          color: #E8704D;
+          font-family: "National-2 Bold", sans-serif; }
+      .apply-form .inputs-col__block_white .checkbox-container {
+        margin-bottom: 0;
+        margin-right: 2.4rem; }
+      .apply-form .inputs-col__block_white label {
+        position: static;
+        width: auto; }
+
+.checkbox-container {
+  position: relative;
+  display: flex;
+  cursor: pointer; }
+
+.checkmark {
+  position: relative;
+  left: 0;
+  height: 2.6rem;
+  width: 2.6rem;
+  background-color: transparent;
+  background-color: #FFF;
+  transition: 0.05s ease-in-out;
+  cursor: pointer;
+  z-index: 111;
+  border: 2px solid #280B56;
+  flex-shrink: 0; }
+
+.checkbox-container input {
+  display: none; }
+
+/* On mouse-over, add a grey background color
+  .checkbox-container:hover input ~ .checkmark {
+    background-color: #ff4a49;
+  } */
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute; }
+
+/* Show the checkmark when checked */
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  width: 1.525em;
+  height: 1.525em;
+  background-image: url(../img/checkbox.svg);
+  background-repeat: no-repeat;
+  background-size: 1.4rem 1rem;
+  left: 50%;
+  margin-left: -0.7rem;
+  margin-top: -0.5rem;
+  top: 50%;
+  opacity: 0; }
+
+.checkbox-container input:checked ~ .checkmark:after {
+  opacity: 1; }
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #280B56; }
+
 @media screen and (max-width: 991px) {
   html {
-    font-size: 9px; } }
+    font-size: 9px; }
+  .apply-form .inputs-col__wrap label {
+    position: static;
+    color: #FFF; } }
 
 @media screen and (max-width: 768px) {
   .reasons-to-work__wrap {
@@ -647,6 +762,8 @@ button, input, select {
     margin-bottom: 5rem; } }
 
 @media screen and (max-width: 568px) {
+  html {
+    font-size: 10px; }
   .reasons-to-work__wrap-block {
     justify-content: center;
     text-align: center; }

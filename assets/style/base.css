@@ -17,7 +17,13 @@ html {
 
 body {
   font-size: 100%;
-  font-family: "National-2 Regular", sans-serif; }
+  height: 100%;
+  font-family: "National-2 Regular", sans-serif;
+  display: flex;
+  flex-direction: column; }
+
+footer {
+  margin-top: auto; }
 
 h1 {
   font-size: 3.1rem;
@@ -41,5 +47,5 @@ h2 {
   text-align: center;
   color: #8c80a6; }
 
-button, input, select {
+button, input, select, textarea {
   outline: none !important; }

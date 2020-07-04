@@ -1,0 +1,76 @@
+.apply{
+    &-main{
+        h2{
+            padding-bottom: 1.5rem;
+        }
+    }
+    &-form{
+        margin: 0rem 0rem 8rem 0rem;
+        .inputs-col{
+            input, textarea{
+                padding: 0.85rem;
+                width: 100%;
+            }
+            &__wrap{
+                background-color: $main-color;
+                padding: 0rem 2.5rem 2.5rem 2.5rem;
+    
+                display: flex;
+                flex-direction: column;
+                margin-top: 4rem;
+            }
+            textarea{
+                resize: none;
+            }
+            &__block{
+                margin-top: 2.25rem;
+                position: relative;
+                label{
+                    position: absolute;
+                    left: -26rem;
+                    top: 0;
+                    color: $main-color;
+                    font-size: 1.6rem;
+                    font-family: $font-bold;
+                    cursor: pointer;
+                    p{
+                        font-family: $font-regular;
+                    }
+                }
+                input[type='file']{
+                    background-color: $second-color;
+                    width: auto;
+                }
+                .upload-btn{
+                    padding-left: 4.5rem;
+                    padding-right: 4.5rem;
+                    border-radius: 0px;
+                }
+                &_white{
+                    background-color: #FFF;
+                    padding: 1.2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p{
+                        margin-bottom: 0;
+                        font-size: 1.2rem;
+                        color: $main-color;
+                        a{
+                            color: $second-color;
+                            font-family: $font-bold;
+                        }
+                    }
+                    .checkbox-container{
+                        margin-bottom: 0;
+                        margin-right: 2.4rem;
+                    }
+                    label{
+                        position: static;
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
