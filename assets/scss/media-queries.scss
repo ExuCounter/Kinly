@@ -1,3 +1,28 @@
+
+@media screen and (min-width: 4920px){
+    html{
+        font-size: 13.5px;
+    }
+}
+
+@media screen and (min-width: 3920px){
+    html{
+        font-size: 12.5px;
+    }
+}
+
+@media screen and (min-width: 2920px){
+    html{
+        font-size: 11.5px;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    html{
+        font-size: 10.5px;
+    }
+}
+
 @media screen and (max-width: 991px){
     html{
         font-size: 9px;
@@ -17,6 +42,25 @@
 }
 
 @media screen and (max-width: 768px){
+    .page-404{
+        position: relative;
+        height: 100%;
+        .main-title{
+            position: static;
+            transform: translate(0);
+            margin-top: 14rem;
+        }
+        .default-btn__wrap{
+            transform: translate(0);
+            position: static;
+            display: flex;
+            justify-content: center;
+            margin-top: 6rem;
+        }
+        .main-404{
+            padding-bottom: 7rem;
+        }
+    }
     .reasons-to-work__wrap{
         flex-wrap: wrap;
         &-block{

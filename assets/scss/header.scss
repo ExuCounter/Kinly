@@ -1,4 +1,6 @@
 .header{
+    position: relative;
+    z-index: 1;
     &-menu{
         position: fixed;
         top: 7.5rem;
@@ -71,5 +73,9 @@
         padding-bottom: 40rem;
         background-size: cover;
         background-position: center !important;
+    }
+    &_fixed{
+        position: absolute;
+        width: 100%;
     }
 }
