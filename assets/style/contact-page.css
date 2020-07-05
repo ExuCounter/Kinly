@@ -7,3 +7,6 @@
   .contact-page .contact-main .contact-phone {
     padding-bottom: 0.5rem;
     border-bottom: 3px solid #c1ecf9; }
+  .contact-page .contact-main #map {
+    height: 100%;
+    width: 100%; }

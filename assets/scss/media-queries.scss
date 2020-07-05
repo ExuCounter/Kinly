@@ -42,20 +42,17 @@
 }
 
 @media screen and (max-width: 768px){
-    .page-404{
+    .page-fixed{
         position: relative;
         height: 100%;
-        .main-title{
+        .thanks-main__center-block{
             position: static;
             transform: translate(0);
             margin-top: 14rem;
         }
         .default-btn__wrap{
-            transform: translate(0);
-            position: static;
-            display: flex;
-            justify-content: center;
             margin-top: 6rem;
+            margin-bottom: 8rem;
         }
         .main-404{
             padding-bottom: 7rem;

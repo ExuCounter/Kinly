@@ -42,8 +42,10 @@
         max-width: 9.4rem;
         height: auto;
     }
-    &__copyright-span{
-        padding-right: 2rem;
+    &__menu{
+        a{
+            margin: 0rem 2.1rem;
+        }
     }
     &__social-menu{
         margin-right: auto;

@@ -33,8 +33,8 @@
   .footer-logo-img {
     max-width: 9.4rem;
     height: auto; }
-  .footer__copyright-span {
-    padding-right: 2rem; }
+  .footer__menu a {
+    margin: 0rem 2.1rem; }
   .footer__social-menu {
     margin-right: auto; }
     .footer__social-menu ul {

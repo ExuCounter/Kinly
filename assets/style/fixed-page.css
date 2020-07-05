@@ -1,0 +1,17 @@
+.page-fixed {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/404-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center; }
+  .page-fixed .thanks-main__center-block {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .page-fixed .main-description {
+    margin-top: 1.5rem; }
+  .page-fixed .default-btn__wrap {
+    margin-top: 6rem;
+    justify-content: center; }
