@@ -45,7 +45,7 @@
                                             <a href="/index.html">Home</a>
                                         </li>
                                         <li>
-                                            <a href="/job-page.html">Job Page</a>
+                                            <a href="/vacancy.html">Job Page</a>
                                         </li>
                                         <li>
                                             <a href="/contact.html">Contact</a>
@@ -99,21 +99,17 @@
     <section class="select-team">
         <div class="container">
             <div class="select-team__wrap">
-                <select class="select-team__select-input">
-                    <option>All locations</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <select class="select-team__select-input" id='location-select'>
+                    <option value='all'>All locations</option>
+                    <option value='amsterdam'>Amsterdam</option>
+                    <option value='breda'>Breda</option>
                 </select>
-                <select class="select-team__select-input">
-                    <option>All departments</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
+                <select class="select-team__select-input" id='department-select'>
+                    <option value='all'>All departments</option>
+                    <option value='engineering'>Engineering</option>
+                    <option value='university'>University degree</option>
                 </select>
-                <button class="select-team__submit-btn default-btn">
+                <button class="select-team__submit-btn default-btn" id='apply-select-btn'>
                     Apply filter
                 </button>
             </div>
@@ -128,7 +124,7 @@
                         <span class="card__inner-title">
                             Field Engineer
                         </span>
-                        <p class="card__inner-tags">
+                        <p class="card__inner-tags" data-location='amsterdam' data-department='engineering university'>
                             Amsterdam | ENGINEERING | UNIVERSITY DEGREE
                         </p>
                         <a href='#' class="default-btn">
@@ -141,8 +137,8 @@
                         <span class="card__inner-title">
                             Software Programmer
                         </span>
-                        <p class="card__inner-tags">
-                            Breda, Amsterdam | ENGINEERING | UNIVERSITY DEGREE
+                        <p class="card__inner-tags" data-department='university' data-location='breda amsterdam'>
+                            Breda, Amsterdam | ENGINEERING
                         </p>
                         <a href='#' class="default-btn">
                             Apply
@@ -154,7 +150,7 @@
                         <span class="card__inner-title">
                             Pre Sales Engineer
                         </span>
-                        <p class="card__inner-tags">
+                        <p class="card__inner-tags" data-department='engineering university' data-location='breda amsterdam'>
                             Breda, Amsterdam | ENGINEERING | UNIVERSITY DEGREE
                         </p>
                         <a href='#' class="default-btn">
@@ -167,8 +163,8 @@
                         <span class="card__inner-title">
                             Senior Business Controller
                         </span>
-                        <p class="card__inner-tags">
-                            Breda | ENGINEERING | UNIVERSITY DEGREE
+                        <p class="card__inner-tags" data-department='engineering university' data-location='amsterdam'>
+                            Breda | UNIVERSITY DEGREE
                         </p>
                         <a href='#' class="default-btn">
                             Apply
@@ -180,7 +176,7 @@
                         <span class="card__inner-title">
                             IT Consultant
                         </span>
-                        <p class="card__inner-tags">
+                        <p class="card__inner-tags" data-department='engineering university' data-location='amsterdam'>
                             Amsterdam | ENGINEERING | UNIVERSITY DEGREE
                         </p>
                         <a href='#' class="default-btn">
@@ -193,7 +189,7 @@
                         <span class="card__inner-title">
                             Project Manager
                         </span>
-                        <p class="card__inner-tags">
+                        <p class="card__inner-tags" data-department='engineering university' data-location='amsterdam'>
                             Amsterdam | ENGINEERING | UNIVERSITY DEGREE
                         </p>
                         <a href='#' class="default-btn">
@@ -276,6 +272,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let locationSelect = document.getElementById('location-select');
+        let departmentSelect = document.getElementById('department-select');
+        let applySelectBtn = document.getElementById('apply-select-btn');
+
+        applySelectBtn.addEventListener('click', ()=>{
+            document.querySelectorAll('.card__inner-tags').forEach(item=>{
+                if( ( item.dataset.department.indexOf(departmentSelect.value) != -1 || departmentSelect.value == 'all' ) && ( item.dataset.location.indexOf(locationSelect.value) != -1 || locationSelect.value == 'all' )){
+                    item.closest('.card').style.display = 'flex';
+                }
+                else{
+                    item.closest('.card').style.display = 'none';
+                }
+            })
+        })
+    </script>
 
     <script src='assets/js/script.js'></script>
     <script src='assets/js/search.js'></script>

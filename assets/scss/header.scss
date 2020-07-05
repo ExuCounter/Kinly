@@ -42,7 +42,7 @@
         position: relative;
     }
     &-language-switcher{
-        padding-right: 12.7rem;
+        padding-right: 13.5rem;
         button{
             border: none;
             background-color: transparent;
@@ -52,9 +52,9 @@
             margin-left: 0.3rem;
             position: relative;
             line-height: 1.15;
-            border-bottom: 0.3rem solid #c1ecf9;
             &.active{
                 font-family: $font-bold;
+                border-bottom: 0.3rem solid #c1ecf9;
                 &:after{
                     content: '';
                     right: -0.7rem;

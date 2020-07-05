@@ -29,6 +29,16 @@
 .join-our-team-banner{
     margin-bottom: 8rem;
     text-align: left;
+    .banner-inner{
+        padding: 4.1rem 3.6rem 4rem 3.7rem;
+    }
+    h2{
+        padding-bottom: 1.6rem;
+        margin-bottom: 0;
+    }
+    p{
+        margin-bottom: 0;
+    }
 }
 
 .footer-banner{

@@ -33,10 +33,15 @@
   .footer-logo-img {
     max-width: 9.4rem;
     height: auto; }
-  .footer__menu a {
-    margin: 0rem 2.1rem; }
+  .footer__copyright-span, .footer__email-link {
+    margin-top: 0.15rem; }
+  .footer__menu {
+    margin-top: 0.15rem; }
+    .footer__menu a {
+      margin: 0rem 2.1rem; }
   .footer__social-menu {
-    margin-right: auto; }
+    margin-right: auto;
+    margin-top: 0.15rem; }
     .footer__social-menu ul {
       display: flex;
       flex-direction: row;

@@ -49,7 +49,8 @@ h2 {
   font-size: 3.9rem;
   color: #280B56;
   font-family: "National-2 Bold", sans-serif;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 0; }
   h2.colored {
     color: #280B56; }
 
@@ -200,7 +201,7 @@ button, input, select, textarea {
   position: relative; }
 
 .header-language-switcher {
-  padding-right: 12.7rem; }
+  padding-right: 13.5rem; }
   .header-language-switcher button {
     border: none;
     background-color: transparent;
@@ -209,10 +210,10 @@ button, input, select, textarea {
     margin-right: 0.7rem;
     margin-left: 0.3rem;
     position: relative;
-    line-height: 1.15;
-    border-bottom: 0.3rem solid #c1ecf9; }
+    line-height: 1.15; }
     .header-language-switcher button.active {
-      font-family: "National-2 Bold", sans-serif; }
+      font-family: "National-2 Bold", sans-serif;
+      border-bottom: 0.3rem solid #c1ecf9; }
       .header-language-switcher button.active:after {
         content: '';
         right: -0.7rem;
@@ -268,10 +269,15 @@ button, input, select, textarea {
   .footer-logo-img {
     max-width: 9.4rem;
     height: auto; }
-  .footer__menu a {
-    margin: 0rem 2.1rem; }
+  .footer__copyright-span, .footer__email-link {
+    margin-top: 0.15rem; }
+  .footer__menu {
+    margin-top: 0.15rem; }
+    .footer__menu a {
+      margin: 0rem 2.1rem; }
   .footer__social-menu {
-    margin-right: auto; }
+    margin-right: auto;
+    margin-top: 0.15rem; }
     .footer__social-menu ul {
       display: flex;
       flex-direction: row;
@@ -294,7 +300,7 @@ button, input, select, textarea {
     color: #FFF; }
 
 .home-video {
-  margin-top: 4rem; }
+  margin-top: 1.75rem; }
 
 .home-page .header-main {
   background: url("../img/personal.png"); }
@@ -325,7 +331,7 @@ button, input, select, textarea {
       .reasons-to-work__wrap-block > div {
         flex-direction: column; }
   .reasons-to-work h1 {
-    padding: 8rem 0rem 1.5rem 0rem; }
+    padding: 6rem 0rem 1.5rem 0rem; }
 
 .join-our-team-page .header-main {
   background: url("../img/join-our-team.png"); }
@@ -375,10 +381,17 @@ button, input, select, textarea {
   .join-team-cards .card {
     border: none;
     margin-bottom: 2.4rem; }
+    .join-team-cards .card:nth-child(odd) {
+      padding-right: 1.2rem; }
+    .join-team-cards .card:nth-child(even) {
+      padding-left: 1.2rem; }
     .join-team-cards .card__inner {
       box-shadow: 0.1rem 0.1rem 0.9rem #e5e5e5;
       background-color: #f1f3f4;
-      padding: 2.6rem; }
+      padding: 2.6rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column; }
       .join-team-cards .card__inner-title {
         font-size: 2.5rem;
         color: #280B56;
@@ -389,9 +402,9 @@ button, input, select, textarea {
         font-size: 1.6rem;
         color: #8c80a6;
         font-family: "National-2 Medium", sans-serif;
-        line-height: 2rem; }
+        line-height: 2rem;
+        margin-top: auto; }
       .join-team-cards .card__inner a {
-        flex-grow: 1;
         display: flex;
         justify-content: center;
         width: 100%;
@@ -417,7 +430,7 @@ button, input, select, textarea {
   margin-bottom: -0.5px;
   position: relative; }
   .search-wrap button {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 2.9rem;
     border: none;
     background-color: transparent; }
   .search-wrap input {
@@ -496,6 +509,13 @@ button, input, select, textarea {
 .join-our-team-banner {
   margin-bottom: 8rem;
   text-align: left; }
+  .join-our-team-banner .banner-inner {
+    padding: 4.1rem 3.6rem 4rem 3.7rem; }
+  .join-our-team-banner h2 {
+    padding-bottom: 1.6rem;
+    margin-bottom: 0; }
+  .join-our-team-banner p {
+    margin-bottom: 0; }
 
 .footer-banner .banner-inner {
   padding: 4rem 0rem; }
@@ -521,7 +541,7 @@ button, input, select, textarea {
   margin-bottom: 4rem; }
 
 .vacancy-page .vacancy-cards {
-  padding: 4rem 0rem 8rem 0rem; }
+  padding: 4.3rem 0rem 8rem 0rem; }
 
 .vacancy-page .content a {
   margin-top: 7.5rem;
@@ -533,6 +553,10 @@ button, input, select, textarea {
 
 .vacancy-page .vacancy-cards .card {
   border: none; }
+  .vacancy-page .vacancy-cards .card:nth-child(1) {
+    padding-right: 2.15rem; }
+  .vacancy-page .vacancy-cards .card:nth-child(2) {
+    padding-left: 2.15rem; }
   .vacancy-page .vacancy-cards .card .card__inner {
     padding: 3.4rem 3rem 2.5rem 3rem;
     background-color: #280B56;
@@ -577,7 +601,7 @@ button, input, select, textarea {
 
 .content {
   background-color: #f1f3f4;
-  padding: 2.5rem 3.8rem 2.5rem 2.5rem; }
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem; }
   .content p, .content span, .content h3 {
     color: #280B56; }
   .content p {
@@ -610,6 +634,8 @@ button, input, select, textarea {
   .contact-page .contact-main #map {
     height: 100%;
     width: 100%; }
+  .contact-page .contact-main .content {
+    padding-bottom: 3rem; }
 
 .privacy-page h2 {
   padding: 12.2rem 0rem 3.5rem 0rem; }
@@ -623,12 +649,16 @@ button, input, select, textarea {
     margin-bottom: 1.7rem; }
 
 .apply-main h2 {
-  padding-bottom: 1.5rem; }
+  padding-bottom: 1.5rem;
+  margin-bottom: 0; }
+
+.apply-main .main-description {
+  margin-bottom: 0; }
 
 .apply-form {
   margin: 0rem 0rem 8rem 0rem; }
   .apply-form .inputs-col input, .apply-form .inputs-col textarea {
-    padding: 0.85rem;
+    padding: 1rem;
     width: 100%; }
   .apply-form .inputs-col__wrap {
     background-color: #280B56;
@@ -639,7 +669,7 @@ button, input, select, textarea {
   .apply-form .inputs-col textarea {
     resize: none; }
   .apply-form .inputs-col__block {
-    margin-top: 2.25rem;
+    margin-top: 2.5rem;
     position: relative; }
     .apply-form .inputs-col__block label {
       position: absolute;
@@ -677,6 +707,10 @@ button, input, select, textarea {
       .apply-form .inputs-col__block_white label {
         position: static;
         width: auto; }
+    .apply-form .inputs-col__block.textarea__block {
+      margin-top: 1.4rem; }
+    .apply-form .inputs-col__block.textarea__under-block {
+      margin-top: 1.1rem; }
 
 .checkbox-container {
   position: relative;

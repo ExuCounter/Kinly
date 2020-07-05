@@ -42,13 +42,18 @@
         max-width: 9.4rem;
         height: auto;
     }
+    &__copyright-span, &__email-link{
+        margin-top: 0.15rem;
+    }
     &__menu{
+        margin-top: 0.15rem;
         a{
             margin: 0rem 2.1rem;
         }
     }
     &__social-menu{
         margin-right: auto;
+        margin-top: 0.15rem;
         ul{
             display: flex;
             flex-direction: row;

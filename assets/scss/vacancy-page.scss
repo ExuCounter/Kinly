@@ -8,7 +8,7 @@
         margin-bottom: 4rem;
     }
     .vacancy-cards{
-        padding: 4rem 0rem 8rem 0rem;
+        padding: 4.3rem 0rem 8rem 0rem;
     }
     .content{
         a{
@@ -24,6 +24,12 @@
     .vacancy-cards{
         .card{
             border: none;
+            &:nth-child(1){
+                padding-right: 2.15rem;
+            }
+            &:nth-child(2){
+                padding-left: 2.15rem;
+            }
             .card__inner{
                 padding: 3.4rem 3rem 2.5rem 3rem;
                 background-color: $main-color;
