@@ -598,6 +598,8 @@ button, input, select, textarea {
       margin-bottom: 3rem; }
     .vacancy-page .vacancy-cards .card .card__inner-socials a {
       margin: 0rem 1.2rem; }
+      .vacancy-page .vacancy-cards .card .card__inner-socials a:hover {
+        text-decoration: none; }
 
 .content {
   background-color: #f1f3f4;

@@ -80,6 +80,9 @@
                 &-socials{
                     a{
                         margin: 0rem 1.2rem;
+                        &:hover{
+                            text-decoration: none;
+                        }
                     }
                 }
             }
