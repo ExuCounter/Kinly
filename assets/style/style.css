@@ -501,7 +501,8 @@ button, input, select, textarea {
     font-family: "National-2 Regular", sans-serif;
     margin-bottom: 0; }
   .banner-inner .default-btn {
-    margin-top: 3.1rem; }
+    margin-top: 3.1rem;
+    font-family: "National-2 Bold", sans-serif; }
 
 .overlay-header-banner {
   position: relative;
