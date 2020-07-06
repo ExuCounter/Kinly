@@ -497,7 +497,8 @@ button, input, select, textarea {
     text-align: left; }
   .banner-inner p {
     font-size: 1.6rem;
-    font-family: "National-2 Regular", sans-serif; }
+    font-family: "National-2 Regular", sans-serif;
+    margin-bottom: 0; }
   .banner-inner .default-btn {
     margin-top: 3.1rem; }
 
