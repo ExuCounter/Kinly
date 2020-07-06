@@ -226,8 +226,8 @@ button, input, select, textarea {
         position: absolute; }
 
 .header-main {
-  padding-bottom: 38rem;
-  background-size: cover;
+  padding-bottom: 40rem;
+  background-size: cover !important;
   background-position: center !important; }
 
 .header_fixed {
