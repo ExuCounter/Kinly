@@ -29,7 +29,8 @@ h1 {
   font-size: 3.1rem;
   color: #280B56;
   font-family: "National-2 Bold", sans-serif;
-  text-align: center; }
+  text-align: center;
+  line-height: 1.1; }
   h1.colored {
     color: #280B56; }
 
