@@ -4,12 +4,10 @@
   background-image: url(../img/404-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center; }
+  background-position-x: center;
+  background-position-y: center; }
   .page-fixed .thanks-main__center-block {
-    position: absolute;
-    top: 50vh;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    margin-top: 29.8rem; }
   .page-fixed .main-description {
     margin-top: 1.5rem; }
   .page-fixed .default-btn__wrap {

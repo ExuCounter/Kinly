@@ -780,17 +780,21 @@ button, input, select, textarea {
   background-image: url(../img/404-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: center; }
+  background-position-x: center;
+  background-position-y: center; }
   .page-fixed .thanks-main__center-block {
-    position: absolute;
-    top: 50vh;
-    left: 50%;
-    transform: translate(-50%, -50%); }
+    margin-top: 29.8rem; }
   .page-fixed .main-description {
     margin-top: 1.5rem; }
   .page-fixed .default-btn__wrap {
     margin-top: 6rem;
     justify-content: center; }
+    .page-fixed .default-btn__wrap a {
+      font-family: "National-2 Bold", sans-serif;
+      padding-top: 1.4rem;
+      padding-bottom: 1.4rem;
+      padding-left: 3.275rem;
+      padding-right: 3.275rem; }
 
 .apply-main .main-title {
   margin-top: 12.2rem; }
@@ -851,7 +855,7 @@ button, input, select, textarea {
     .page-fixed .thanks-main__center-block {
       position: static;
       transform: translate(0);
-      margin-top: 14rem; }
+      margin-top: 20rem; }
     .page-fixed .default-btn__wrap {
       margin-top: 6rem;
       margin-bottom: 8rem; }
