@@ -1,0 +1,628 @@
+<?php
+include 'includes/area-header.php';
+?> 
+<!-- MAIN -->
+<main class='main'>
+    <div class="row main-wrap__row pb-lg-0 pb-md-2 pb-3">
+            <div class="main-wrap__left col-lg-9 col-12 d-flex">    
+                <div class='main-wrap__left-col left-top-row'>
+                    <div class="main-col show-md-desktop">
+                        <div class="main-col__inner">
+                            <div class="sm-block__slider members-slider d-block w-100">
+                                <div class="sm-block__slider-block">
+                                    <img src="assets/img/certificated.png" alt="slider image" class='default-img'>
+                                    <span class="main-col__inner-desc">
+                                        Licensed & Insured
+                                    </span>
+                                </div>
+                                <div class="sm-block__slider-block members-slider__top-rated">
+                                    <img src="assets/img/top-rated-local.png" alt="slider image" class='default-img'>
+                                    <span class="main-col__inner-desc">
+                                        Top Rated Local
+                                    </span>
+                                </div>
+                                <div class="sm-block__slider-block members-slider__bbb-rated">
+                                    <img src="assets/img/bbb.png" alt="slider image" class='default-img'>
+                                    <span class="main-col__inner-desc">
+                                        BBB A+ Rated
+                                    </span>
+                                </div>
+                                <div class="sm-block__slider-block members-slider__aloa-rated" id='members-slider__aloa-rated'>
+                                    <img src="assets/img/aloa.png" alt="slider image" class='default-img'>
+                                    <span class="main-col__inner-desc">
+                                        ALOA Members
+                                    </span>
+                                </div>
+                            </div>
+                            <a href='about-us' class="link-btn">
+                                <span>About us</span>
+                                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main-col">
+                        <div class="main-col__inner main-col__inner-locked">
+                            <!-- MAIN SECTION -->
+                            <div class="first-screen-lock d-flex show-lock-section flex-column w-100">
+                                <div class="first-screen-lock__top">
+                                    <span class="main-col__inner-desc">
+                                        Locked Out?
+                                    </span>
+                                    <div class="new">New</div>
+                                    <div class='ask-btn'>
+                                        <i class='ask-icon fa fa-info-circle' data-toggle="tooltip" data-trigger="hover" data-placement="bottom" title="By Using this feature we will quickly find our nearest locksmith to your location then contact you within 1 minute with our estimated time of arrival."></i>
+                                    </div>
+                                    <h1 class="main-col__inner-locked__title mb-2 mb-md-0 show-md-desktop">
+                                        Get In 2X Faster With Our Smart Locator 
+                                        <i class="street-icon fa fa-street-view pulse pl-1" aria-hidden="true"></i>
+                                    </h1>
+                                    <h2 class="show-md-mobile main-col__inner-locked__title_mobile pt-3 pb-3">
+                                        Get In 2X Faster With Our <br>GPS Locator 
+                                        <i class="street-icon fa fa-street-view pulse" aria-hidden="true"></i>
+                                    </h2>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="form-container unlock-form-container">
+                                        <form method="post" name="form" class='unlock-form' action="#">
+                                            <div class="d-flex w-100">
+                                                <input type="text" placeholder="Your Name?" id="unlock-form-name" tabindex="0">
+                                                <input type="tel" placeholder="Phone Number" id="unlock-form-tel" inputmode='tel' tabindex="0">
+                                                <input type="text" placeholder="Street address" id="unlock-form-address" tabindex="0">
+                                                <input type="text" placeholder="Zip Code" id="unlock-form-zip" maxlength="5" tabindex="0">
+                                            </div>                                              
+                                            <button class='btn-disabled' disabled type="submit" name="submit" id='submit-btn-first-unlock' tabindex="0">
+                                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="1.5em" height="1.5em" viewBox="0 0 535.5 535.5" style="enable-background:new 0 0 535.5 535.5;" xml:space="preserve"><g><g>
+                                                    <g id="send">
+                                                        <polygon points="0,497.25 535.5,267.75 0,38.25 0,216.75 382.5,267.75 0,318.75   " data-original="#000000" class="active-path" data-old_color="#000000" fill="#E2E2E2"/>
+                                                    </g>
+                                                </g></g> </svg>
+                                            </button>
+                                        </form>
+                                        <div class="form-error">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mobile-locked-form show-md-mobile">
+                                    <div class="mobile-locked-form__inner">
+                                        <div class="left-toggle toggle-block">
+                                            <img src="assets/img/unlock.png" alt="">
+                                        </div>
+                                        <span>Unlock My Door</span>
+                                        <div class="right-toggle-finish toggle-block">
+                                            <img src="assets/img/unlock2.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- MOBILE VERSIONS -->
+                            <div class="second-mobile-screen-lock mobile-lock hide-lock-section flex-column w-100">
+                                <span class="main-col__inner-desc">
+                                   Let's find you
+                                </span>
+                                <div class="d-flex flex-column">
+                                    <p class='pt-2 pb-3 mb-0'>
+                                        We'll Locate Our Nearest Locksmith to you
+                                    </p>
+                                    <div class="second-mobile-screen-lock__btn-container pb-2">
+                                        <button class='second-mobile-screen-lock__confirm-btn' tabindex="0">
+                                            <img src="assets/img/send.svg" alt="" class='swap-icon'>
+                                            <img src="assets/img/send.svg" alt="" class='not-swap-icon'>
+                                            <span class='d-block'>Enable Location</span>
+                                        </button>
+                                    </div>
+                                    <p class='privacy-policy justify-content-center flex-column pb-3'>By clicking "Enable Location" you agree to our 
+                                        <span class='d-flex justify-content-center'>
+                                            <a href="/terms-of-use" target='_blank' class='ml-1'>Terms of Use</a><span class='d-flex pl-1'>&</span><a href="/privacy-policy" target='_blank' class='pl-1'>Privacy Policy</a>
+                                        </span>
+                                    </p>
+                                  </div>
+                                <div class="step-dots mt-0">
+                                    <div class="step-dot active"></div>
+                                    <div class="step-dot"></div>
+                                    <div class="step-dot"></div>
+                                </div>
+                            </div>
+                            <div class="third-mobile-screen-lock mobile-lock hide-lock-section flex-column w-100">
+                                <div class="map-corner-wrapper">
+                                    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6710.390757815344!2d-96.82236845635549!3d32.76054992323656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1591093174537!5m2!1sru!2sua" height="350" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>-->
+                                    <div id="map" style="height:350px;"></div>
+                                </div>
+                                <div class="wrap">
+                                    <button class='third-mobile-screen-lock__confirm-btn' tabindex="0">
+                                        <img src="assets/img/send.svg" alt="" class='swap-icon'>
+                                        <span>Confirm</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="fourth-mobile-screen-lock mobile-lock hide-lock-section flex-column w-100">
+                                <span class="main-col__inner-desc">
+                                    We Found You!
+                                </span>
+                                <p class='pt-3 mb-2'>
+                                    Our Customers In <span class="mobile-city-name-span">Abita Springs</span> <br> Got in Faster
+                                </p>
+                                <p class='pt-0'>
+                                    Get Our ETA Now Via Immediate Phone Call
+                                </p>
+                                  <form action="#" class='lock-form-mobile'>
+                                    <input type="text" placeholder="Name" id='unlock-mobile-form-name' tabindex="0">
+                                    <input type="tel" placeholder="Phone Number" id='unlock-mobile-form-tel' inputmode='tel' tabindex="0">
+                                    <button class='fourth-mobile-screen-lock__confirm-btn' tabindex="0">
+                                        <img src="assets/img/send.svg" alt="" class='not-swap-icon' style='transform: translate(0);'>
+                                    </button>
+                                    <div class="form-error">
+                                        
+                                    </div>
+                                  </form>
+                                  <div class="step-dots">
+                                      <div class="step-dot"></div>
+                                      <div class="step-dot active"></div>
+                                      <div class="step-dot"></div>
+                                  </div>
+                            </div>
+                            <div class="fifth-mobile-screen-lock mobile-lock hide-lock-section flex-column w-100">
+                                <span class="main-col__inner-desc">
+                                    <span class="fa-street-container">
+                                        <i class='fa fa-street-view anim'></i>
+                                    </span>
+                                    Locating Our Nearest Locksmith
+                                    <span class="dots-wait-container pt-0">
+                                    </span>
+                                </span>
+                                <div class="d-flex flex-lg-row flex-column">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <p>
+                                            We've got your request and working at the moment to find our closest locksmith to you. We understand that you may be in a hurry so we prioritize your request to get immediate service.
+                                        </p>
+                                    </div>
+                                    <lottie-player src="assets/lotties/locating-anim.json" background="transparent" speed="1" style="width: 50%; height: 90px; margin: 0 auto" loop autoplay></lottie-player>
+                                    <p class='mt-3 mb-0'>          
+                                        Please wait, you will be contacted within <span class='fifth-mobile-screen-lock__time p-underline'>01:00</span>
+                                    </p>
+                                    <div class="step-dots">
+                                        <div class="step-dot"></div>
+                                        <div class="step-dot"></div>
+                                        <div class="step-dot active"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sixth-mobile-screen-lock mobile-lock hide-lock-section flex-column w-100">
+                                <span class="main-col__inner-desc">
+                                    All Set      
+                                </span>
+                                <div class="d-flex flex-column">
+                                    <p class="main-col__inner-desc-p pt-2 pb-2">
+                                        You will be immediately contacted at <br><span class='sixth-mobile-screen-lock__number text-center'></span><br>
+                                        Please confirm your phone number
+                                    </p>
+                                    <div class="second-screen-lock__btn-container">
+                                        <button class='sixth-mobile-screen-lock__change-btn' tabindex="0">
+                                            Change
+                                        </button>
+                                        <button class='sixth-mobile-screen-lock__confirm-btn' tabindex="0">
+                                            <img src="assets/img/send.svg" alt="" class='swap-icon'>
+                                            <span>Confirm</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="step-dots">
+                                    <div class="step-dot"></div>
+                                    <div class="step-dot active"></div>
+                                    <div class="step-dot"></div>
+                                </div>
+                            </div>
+                            <div class="finish-mobile-screen-lock mobile-lock hide-lock-section flex-column w-100">
+                                <span class="main-col__inner-desc">
+                                    Thanks <span class='finish-mobile-screen-lock__name pl-1 text-capitalize'></span>
+                                </span>
+                                <div class="d-flex flex-lg-row flex-column">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <p class='ipad-paragraph-lockout-hide'>
+                                            We appreciate the time you took to contact us today.
+                                            You can now add us to your mobile contacts easily by clicking the add button below.
+                                        </p>
+                                        <p class='ipad-paragraph-lockout-show'>
+                                            We appreciate the time you took to contact us today. Add us to your mobile contacts trough the SMS you will receive from us shortly. 
+                                        </p>
+                                    </div>
+                                    <div class="img-container">
+                                        <a href="/vcard/trulox.vcf" id="save-vcf-mobile">
+                                            <img src="assets/img/lockout-thanks.png" alt="">
+                                        </a>
+                                        <lottie-player class='ipads-lockout-gif' src="assets/lotties/add-contact-anim.json" background="transparent" speed="1" style="width: 94%; height: 9rem;" loop autoplay></lottie-player>
+                                    </div>
+                                    <p class='ipad-paragraph-lockout-hide'>          
+                                        We'll be there anytime you need us!<br><span class='p-underline'>The Team at Trulox</span>  
+                                    </p>
+                                    <p class='ipad-paragraph-lockout-show text-center'>
+                                        Always at your service,<span class='p-underline'>Team Trulox</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="far-mobile-screen-lock mobile-lock hide-lock-section flex-column w-100">
+                                <span class="main-col__inner-desc">
+                                    You seem a little far..
+                                </span>
+                                <p class='mt-2'>
+                                    Our mobile locksmith service available ln New Orleans metropolitan area only.<br>
+                                    We couldn't match Your GPS coordinates, However feel free to call our customer service. 
+                                </p>
+                                <button class="mobile-lock__close-btn">
+                                    Close
+                                </button>
+                            </div>
+
+                            <!-- DESKTOP VERSIONS -->
+                            <div class="second-screen-lock desktop-lock hide-lock-section flex-column w-100">
+                                <span class="main-col__inner-desc">
+                                   Our Nearest Locksmith to <span class='pl-1 second-screen-lock__zip'></span>
+                                </span>
+                                <div class="d-flex flex-column">
+                                    <p>
+                                        You will be immediately contacted at <span class='second-screen-lock__number'></span>
+                                    </p>
+                                    <div class="second-screen-lock__btn-container flex-column">
+                                        <div class="d-flex">
+                                            <button class='second-screen-lock__change-btn' tabindex="0">
+                                                Change
+                                            </button>
+                                            <button class='second-screen-lock__confirm-btn' tabindex="0">
+                                                Confirm
+                                            </button>
+                                        </div>
+                                        <p class='privacy-policy justify-content-center'>By clicking "confirm" you agree to our 
+                                            <span class='d-flex justify-content-center'>
+                                                <a href="/terms-of-use" target='_blank' class='ml-1'>Terms</a><span class='d-flex pl-1'>&</span><a href="/privacy-policy" target='_blank' class='pl-1'>Privacy</a>
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="third-screen-lock desktop-lock hide-lock-section flex-column w-100">
+                                <span class="main-col__inner-desc mr-3">
+                                    <span class='font-weight-bold mt-0 d-flex'>
+                                        <span class="fa-street-container mb-0">
+                                            <i class='fa fa-street-view anim'></i>
+                                        </span>
+                                        Locating Our Nearest Locksmith
+                                        <span class="dots-wait-container">
+                                        </span>
+                                    </span>
+                                </span>
+                                <div class="d-flex flex-md-row flex-column mt-auto mb-auto align-items-center">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <p>
+                                            We've got your request and working at the moment to find our closest locksmith to you.
+                                        </p>
+                                        <p>          
+                                            Please wait, you will be contacted within <span class='third-screen-lock__time p-underline'>01:00</span>
+                                        </p>
+                                    </div>
+                                    <lottie-player src="assets/lotties/locating-anim.json" background="transparent" speed="1" style="width: 94%; height: 100%;" loop autoplay></lottie-player>
+                                </div>
+                            </div>
+                            <div class="call-screen-lock desktop-lock hide-lock-section flex-column w-100">
+                                <span class="main-col__inner-desc mr-3">
+                                    <span class='font-weight-bold mt-0 mb-1 d-flex align-items-center'>
+                                        <i class="fa fa-volume-control-phone mr-2" aria-hidden="true"></i> 
+                                        Calling Now
+                                        <span class="dots-wait-container">
+                                        </span>
+                                    </span>
+                                </span>
+                                <div class="d-flex flex-md-row flex-column mt-auto mb-auto align-items-center">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <p class='d-flex'>
+                                            You will now speak with a live representative who may collect any additional information needed 
+                                            and will provide you with our estimated time of arrival to your location.
+                                        </p>
+                                    </div>
+                                    <lottie-player src="assets/lotties/calling-anim.json" background="transparent" speed="1" style="width: 94%; height: 100%;" loop autoplay></lottie-player>
+                                </div>
+                            </div>
+                            <div class="fourth-screen-lock desktop-lock hide-lock-section flex-column w-100">
+                                <span class="main-col__inner-desc">
+                                    Thanks <span class='pl-1 fourth-screen-lock__name text-capitalize'></span>
+                                </span>
+                                <div class="d-flex flex-md-row flex-column mt-auto mb-auto align-items-center">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <p>
+                                            We appreciate the time you took to contact us today.
+                                            Add us to your mobile contacts trough the SMS you will receive from us shortly.
+                                            Always at your service,<span class='p-underline ml-1'>Team Trulox</span> 
+                                        </p>
+                                    </div>
+                                    <lottie-player src="assets/lotties/add-contact-anim.json" background="transparent" speed="1" style="width: 94%; height: 100%;" loop autoplay></lottie-player>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-wrap__left-col left-center-row">
+                    <a class="main-col center-col" href='automotive'>
+                        <div class="main-col__inner sm-col">
+                            <img src="assets/img/automotive.png" alt="">
+                            <span class="main-col__inner-desc">
+                                Automotive
+                            </span>
+                            <ul>
+                                <li class='point-benefit-li-1 benefit-point'><i class="fa fa-check" aria-hidden="true"></i>Car Key Replacement</li>
+                                <li class='point-benefit-li-2 benefit-point'><i class="fa fa-check" aria-hidden="true"></i>Keyless Entry</li>
+                                <li class='point-benefit-li-3 benefit-point'><i class="fa fa-check" aria-hidden="true"></i>Ignition Services</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a class="main-col center-col" href='residential'>
+                        <div class="main-col__inner sm-col main-col__inner-residental">
+                            <img src="assets/img/residential.png" alt="">
+                            <span class="main-col__inner-desc ">
+                                Residential
+                            </span>
+                            <ul>
+                                <li class='point-benefit-li-4 benefit-point'><i class="fa fa-check" aria-hidden="true"></i>Lock Replacement</li>
+                                <li class='point-benefit-li-5 benefit-point'><i class="fa fa-check" aria-hidden="true"></i>Lock Rekeying</li>
+                                <li class='point-benefit-li-6 benefit-point'><i class="fa fa-check" aria-hidden="true"></i>High Security Locks</li>
+                            </ul>
+                        </div>
+                    </a>
+                    <a class="main-col center-col" href='commercial'>
+                        <div class="main-col__inner sm-col">
+                            <img src="assets/img/commercial.png" alt="">
+                            <span class="main-col__inner-desc">
+                                Commercial
+                            </span>
+                            <ul>
+                                <li class='point-benefit-li-7 benefit-point'><i class="fa fa-check" aria-hidden="true"></i>Lock Rekeying</li>
+                                <li class='point-benefit-li-8 benefit-point'><i class="fa fa-check" aria-hidden="true"></i>Master Key Systems</li>
+                                <li class='point-benefit-li-9 benefit-point'><i class="fa fa-check" aria-hidden="true"></i>Safe Services</li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+                <div class="main-wrap__left-col left-bottom-row show-lg-desktop">
+                    <div class="main-col">
+                        <div class="main-col__inner">
+                            <div class="d-flex flex-column">
+                                <span class="main-col__inner-desc">
+                                    Connect With Us
+                                </span>
+                                <p class="main-col__inner-sm-text">
+                                    Stay in-the-know through your favorite channels
+                                </p>
+                                <ul class="soc-links__list">
+                                    <li>
+                                        <a href="#" target="_blank"><img src="assets/img/google.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank"><img src="assets/img/yelp.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank"><img src="assets/img/facebook.png" alt=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" target="_blank"><img src="assets/img/instagram.png" alt=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-col">
+                        <div class="main-col__inner review-col__inner">
+                            <span class="main-col__inner-desc">
+                                Trulox Community 
+                            </span>
+
+                            <div class="sm-block__slider d-block w-100 review-slider">
+                                <?php
+								$query_select = "SELECT * FROM reviews ORDER BY display_order";
+								$result_select = mysql_query($query_select) or die(mysql_error());
+								$rows = array();
+								while($row = mysql_fetch_array($result_select))
+									$rows[] = $row;
+								
+								$count = 0;
+								foreach($rows as $row){ 
+									$count++; 								  
+									$name = stripslashes($row['name']);
+									$image = stripslashes($row['image']);
+									$content = stripslashes($row['content']);
+									$link = stripslashes($row['link']);
+									$source = stripslashes($row['source']);
+									$date = stripslashes($row['date']);
+								?>
+                                <a href="<?= $link?>" target="_blank" class="sm-block__slider-block">
+                                    <p class='review-slider__text'>
+                                        <i class="fa fa-quote-left left-quotes"></i>
+                                        <?= $content?>
+                                        <i class="fa fa-quote-right right-quotes"></i>
+                                    </p>
+                                    <div class="rewiew-slider-block__bottom-row">
+                                        <div class="rewiew-slider-block__bottom-row-user">
+                                            <img src="<?=$site_url?>/assets/img/reviews/<?=$image?>" alt="">
+                                            <p><?= $name?></p>
+                                        </div>
+                                        <div class="rewiew-slider-block__bottom-row_rating"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+                                        <div class="review-slider-block__bottom-date">
+                                            <p><?=$source?>, <span><?=$date?></span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+								<?php } ?>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-wrap__right mt-lg-0 mt-md-2 mt-0 col-lg-3 col-12">
+                <div class="main-col main-wrap__right-col">
+                    <div class="main-col__inner main-col__inner-quote">
+                        <span class="main-col__inner-desc">
+                            Get a Free Quote
+                        </span>
+                        
+						<?php include 'includes/get-quote-form.php'?>
+                        
+                    </div>
+                </div>
+                <div class="main-col show-md-mobile w-100 mb-4 mb-lg-0">
+                    <div class="main-col__inner">
+                        <div class="sm-block__slider members-slider d-block w-100">
+                            <div class="sm-block__slider-block">
+                                <img src="assets/img/certificated.png" alt="slider image" class='default-img'>
+                                <span class="main-col__inner-desc">
+                                    Licensed. Bonded. Insured
+                                </span>
+                            </div>
+                            <div class="sm-block__slider-block">
+                                <img src="assets/img/top-rated-local.png" alt="slider image" class='default-img'>
+                                <span class="main-col__inner-desc">
+                                    Top Rated Local
+                                </span>
+                            </div>
+                            <div class="sm-block__slider-block">
+                                <img src="assets/img/bbb.png" alt="slider image" class='default-img'>
+                                <span class="main-col__inner-desc">
+                                    BBB A+ Rated
+                                </span>
+                            </div>
+                            <div class="sm-block__slider-block">
+                                <img src="assets/img/aloa.png" alt="slider image" class='default-img'>
+                                <span class="main-col__inner-desc">
+                                    ALOA Members
+                                </span>
+                            </div>
+                        </div>
+                        <a href='https://trulox.com/contact-us' class="link-btn">
+                            <span id="promotions">About us</span>
+                            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <?php
+					$day = date("m");
+					$monthNum  = $day ;
+					$dateObj   = DateTime::createFromFormat('!m', $monthNum);
+					$monthName = $dateObj->format('F');
+					$date_string =  date("l") . ', ' . $monthName . ' ' . date("d") . ', ' . date("Y");
+					
+					/* Getting offers from database */
+					$day = date('l');
+					$get_product = "SELECT * FROM offers WHERE day = '$day'";
+					$get_product_query = mysql_query($get_product);
+					$get_product_data = mysql_fetch_array($get_product_query);
+				?>
+                <div class="main-col main-wrap__right-col mt-0 mt-sm-3 mt-md-0 h-auto-base center-col">
+                    <div class="main-col__inner sm-col daily-specials-slider-container">
+                        <div class="sm-block__slider d-block w-100 daily-specials-slider_top mt-0">
+                            <div class="sm-block__slider-block">
+                                <span class="main-col__inner-desc">
+                                    Daily Specials
+                                </span>
+                            </div>
+                            <div class="sm-block__slider-block">
+                                <span class="main-col__inner-desc">
+                                    <?=$date_string?>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="sm-block__slider d-block w-100 daily-specials-slider">
+                            <div class="sm-block__slider-block">
+                                <img src="<?=$site_url?>/assets/img/special-offers/<?=$get_product_data['first_banner']?>" alt=''>
+                            </div>
+                            <div class="sm-block__slider-block">
+                                <img src="<?=$site_url?>/assets/img/special-offers/<?=$get_product_data['second_banner']?>" alt=''>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="row main-wrap__row pt-0 show-mobile">
+        <div class="main-wrap__left col-lg-9 col-12 d-flex">
+            <div class="main-wrap__left-col left-bottom-row">
+                <div class="main-col order-1">
+                    <div class="main-col__inner">
+                        <div class="d-flex flex-column">
+                            <span class="main-col__inner-desc">
+                                Connect With Us
+                            </span>
+                            <p class="main-col__inner-sm-text mb-md-0 mb-2 mt-2 mt-md-0">
+                                Stay in-the-know through your favorite channels
+                            </p>
+                            <ul class="soc-links__list">
+                                <li>
+                                    <a href="#"><img src="assets/img/google.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/img/yelp.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/img/facebook.png" alt=""></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="assets/img/instagram.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-col">
+                    <div class="main-col__inner review-col__inner">
+                        <span class="main-col__inner-desc">
+                            Trulox Community 
+                        </span>
+
+                        <div class="sm-block__slider d-block w-100 review-slider">
+                            <?php
+							$query_select = "SELECT * FROM reviews ORDER BY display_order";
+							$result_select = mysql_query($query_select) or die(mysql_error());
+							$rows = array();
+							while($row = mysql_fetch_array($result_select))
+								$rows[] = $row;
+							
+							$count = 0;
+							foreach($rows as $row){ 
+								$count++; 								  
+								$name = stripslashes($row['name']);
+								$image = stripslashes($row['image']);
+								$content = stripslashes($row['content']);
+								$link = stripslashes($row['link']);
+								$source = stripslashes($row['source']);
+								$date = stripslashes($row['date']);
+							?>
+                            <a href="<?= $link?>" target="_blank" class="sm-block__slider-block">
+                                <p class='review-slider__text'>
+                                    <i class="fa fa-quote-left left-quotes"></i>
+                                    <?= $content?>
+                                    <i class="fa fa-quote-right right-quotes"></i>
+                                </p>
+                                <div class="rewiew-slider-block__bottom-row">
+                                    <div class="rewiew-slider-block__bottom-row-user">
+                                        <img src="<?=$site_url?>/assets/img/reviews/<?=$image?>" alt="">
+                                        <p><?= $name?></p>
+                                    </div>
+                                    <div class="rewiew-slider-block__bottom-row_rating"><i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> <i class="fa fa-star" aria-hidden="true"></i> </div>
+                                    <div class="review-slider-block__bottom-date">
+                                        <p><?=$source?>, <span><?=$date?></span></p>
+                                    </div>
+                                </div>
+                            </a>
+                            <?php
+							}
+							?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<?php
+include 'includes/area-footer.php';
+?>
