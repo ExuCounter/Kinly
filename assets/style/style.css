@@ -203,7 +203,7 @@ button, input, select, textarea {
   position: relative; }
 
 .header-language-switcher {
-  padding-right: 13.5rem; }
+  padding-right: 12.9rem; }
   .header-language-switcher button {
     border: none;
     background-color: transparent;
@@ -354,11 +354,14 @@ button, input, select, textarea {
     .select-team__wrap button {
       white-space: nowrap;
       padding-left: 4rem;
-      padding-right: 4rem; }
+      padding-right: 4rem;
+      padding-top: 1.3rem;
+      padding-bottom: 1.3rem;
+      font-family: "National-2 Bold", sans-serif; }
   .select-team__select-input {
     display: block;
     width: 100%;
-    padding: 1.375rem 1.6rem;
+    padding: 1.075rem 1.6rem;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.5;
@@ -398,7 +401,7 @@ button, input, select, textarea {
         font-size: 2.5rem;
         color: #280B56;
         font-family: "National-2 Bold", sans-serif;
-        margin-bottom: 3.5rem;
+        margin-bottom: 1.9rem;
         display: block; }
       .join-team-cards .card__inner-tags {
         font-size: 1.6rem;
@@ -416,7 +419,8 @@ button, input, select, textarea {
         background-color: transparent;
         transition: 0.2s ease-in-out;
         color: #E8704D;
-        text-decoration: none; }
+        text-decoration: none;
+        font-family: "National-2 Bold", sans-serif; }
         .join-team-cards .card__inner a:hover {
           color: #FFF;
           background-color: #E8704D; }
@@ -532,6 +536,8 @@ button, input, select, textarea {
 .footer-banner a.default-btn {
   padding-left: 5.2rem;
   padding-right: 5.2rem;
+  padding-top: 1.45rem;
+  padding-bottom: 1.45rem;
   margin-top: 1.5rem;
   color: #FFF;
   text-decoration: none; }
