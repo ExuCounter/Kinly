@@ -1,2 +1,5 @@
 .apply-main .main-title {
-  margin-top: 12.2rem; }
+  margin-top: 12rem; }
+
+.inputs-col__sm-top {
+  margin-top: 3.8rem !important; }

@@ -4,7 +4,9 @@
   overflow: hidden; }
   .top-bar-logo-img {
     max-width: 16.6rem;
-    height: auto; }
+    height: auto;
+    margin-right: 0.7rem;
+    display: flex; }
   .top-bar-col {
     display: flex;
     align-items: center; }

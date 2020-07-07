@@ -18,9 +18,12 @@
                 padding: 0.8rem 1rem;
                 width: 100%;
             }
+            textarea{
+                padding-bottom: 1.2rem;
+            }
             &__wrap{
                 background-color: $main-color;
-                padding: 1rem 2.5rem 2.5rem 2.5rem;
+                padding: 0.4rem 2.5rem 2.5rem 2.5rem;
     
                 display: flex;
                 flex-direction: column;
@@ -50,8 +53,10 @@
                     width: auto;
                 }
                 .upload-btn{
-                    padding-left: 4.65rem;
-                    padding-right: 4.65rem;
+                    padding-left: 4.533rem;
+                    padding-right: 4.533rem;
+                    padding-top: 1.4rem;
+                    padding-bottom: 1.4rem;
                     border-radius: 0px;
                     font-family: $font-bold;
                 }
@@ -90,7 +95,13 @@
                 }
             }
             .form-submit-btn__container{
-                margin-right: 1.3rem;
+                margin-right: 0.65rem;
+                margin-left: 0.65rem;
+                margin-top: 2.5rem;
+                button{
+                    padding-top: 1.45rem;
+                    padding-bottom: 1.45rem;
+                }
             }
         }
     }

@@ -1,5 +1,14 @@
 .apply-main{
     .main-title{
-        margin-top: 12.2rem;
+        margin-top: 12rem;
+    }
+    .main-description{
+        font-family: $font-bold;
+    }
+}
+
+.inputs-col{
+    &__sm-top{
+        margin-top: 3.8rem !important;
     }
 }

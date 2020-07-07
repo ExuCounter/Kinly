@@ -82,7 +82,9 @@ button, input, select, textarea {
   overflow: hidden; }
   .top-bar-logo-img {
     max-width: 16.6rem;
-    height: auto; }
+    height: auto;
+    margin-right: 0.7rem;
+    display: flex; }
   .top-bar-col {
     display: flex;
     align-items: center; }
@@ -675,9 +677,11 @@ button, input, select, textarea {
   .apply-form .inputs-col input, .apply-form .inputs-col textarea {
     padding: 0.8rem 1rem;
     width: 100%; }
+  .apply-form .inputs-col textarea {
+    padding-bottom: 1.2rem; }
   .apply-form .inputs-col__wrap {
     background-color: #280B56;
-    padding: 1rem 2.5rem 2.5rem 2.5rem;
+    padding: 0.4rem 2.5rem 2.5rem 2.5rem;
     display: flex;
     flex-direction: column;
     margin-top: 6.2rem; }
@@ -701,8 +705,10 @@ button, input, select, textarea {
       background-color: #E8704D;
       width: auto; }
     .apply-form .inputs-col__block .upload-btn {
-      padding-left: 4.65rem;
-      padding-right: 4.65rem;
+      padding-left: 4.533rem;
+      padding-right: 4.533rem;
+      padding-top: 1.4rem;
+      padding-bottom: 1.4rem;
       border-radius: 0px;
       font-family: "National-2 Bold", sans-serif; }
     .apply-form .inputs-col__block .form-submit-btn {
@@ -731,7 +737,12 @@ button, input, select, textarea {
     .apply-form .inputs-col__block.textarea__under-block {
       margin-top: 0.9rem; }
   .apply-form .inputs-col .form-submit-btn__container {
-    margin-right: 1.3rem; }
+    margin-right: 0.65rem;
+    margin-left: 0.65rem;
+    margin-top: 2.5rem; }
+    .apply-form .inputs-col .form-submit-btn__container button {
+      padding-top: 1.45rem;
+      padding-bottom: 1.45rem; }
 
 .checkbox-container {
   position: relative;
@@ -806,7 +817,13 @@ button, input, select, textarea {
       padding-right: 3.275rem; }
 
 .apply-main .main-title {
-  margin-top: 12.2rem; }
+  margin-top: 12rem; }
+
+.apply-main .main-description {
+  font-family: "National-2 Bold", sans-serif; }
+
+.inputs-col__sm-top {
+  margin-top: 3.8rem !important; }
 
 @media screen and (max-width: 991px) {
   html {
