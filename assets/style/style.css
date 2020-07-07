@@ -816,6 +816,10 @@ button, input, select, textarea {
       padding-left: 3.275rem;
       padding-right: 3.275rem; }
 
+.thanks-page {
+  background-image: url(../img/thanks-bg.png);
+  background-position-y: bottom; }
+
 .apply-main .main-title {
   margin-top: 12rem; }
 
