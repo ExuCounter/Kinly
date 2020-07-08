@@ -954,7 +954,10 @@ button, input, select, textarea {
     padding: 5rem 0rem 3.5rem 0rem; }
   .privacy-page .content {
     padding-bottom: 4rem;
-    margin-bottom: 5rem; } }
+    margin-bottom: 5rem; }
+  .vacancy-page .vacancy-cards .card:nth-child(1), .vacancy-page .vacancy-cards .card:nth-child(2) {
+    padding-left: 15px;
+    padding-right: 15px; } }
 
 @media screen and (max-width: 568px) {
   html {
