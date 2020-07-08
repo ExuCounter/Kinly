@@ -916,9 +916,7 @@ button, input, select, textarea {
       .reasons-to-work__wrap-block img {
         margin-left: 0; }
   .burger-menu {
-    position: fixed;
-    right: 2.7rem;
-    top: calc(100vh - 9rem); }
+    right: 2.7rem; }
   .header-menu {
     position: fixed;
     top: calc(100vh - 27rem);
@@ -929,6 +927,8 @@ button, input, select, textarea {
     .header-menu.active {
       top: calc(100vh - 27rem);
       right: 3rem; }
+    .header-menu__container {
+      bottom: 2.1rem; }
   .header-language-switcher {
     padding-right: 3rem; }
   .contact-main {

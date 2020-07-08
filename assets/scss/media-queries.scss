@@ -118,9 +118,7 @@
         }
     }
     .burger-menu{
-        position: fixed;
         right: 2.7rem;
-        top: calc(100vh - 9rem);
     }
     .header-menu{
         position: fixed;
@@ -132,6 +130,9 @@
         &.active{
             top: calc(100vh - 27rem);
             right: 3rem;
+        }
+        &__container{
+            bottom: 2.1rem;
         }
     }
     .header-language-switcher{
