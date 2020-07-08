@@ -974,4 +974,7 @@ button, input, select, textarea {
   .header .container {
     padding: 0; }
   .header-main {
-    padding-bottom: 22.5rem; } }
+    padding-bottom: 22.5rem; }
+  .home-page .header-main {
+    padding-bottom: 40rem;
+    background: url("../img/home-header-mobile.png"); } }
