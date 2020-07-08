@@ -273,11 +273,11 @@ button, input, select, textarea {
     margin-top: 0.15rem;
     white-space: nowrap; }
   .footer__email-link {
-    margin-left: 3.7rem; }
+    margin-left: 3.9rem; }
   .footer__menu {
     margin-top: 0.15rem; }
     .footer__menu a {
-      margin: 0rem 0rem 0rem 2.05rem; }
+      margin: 0rem 0rem 0rem 2.0rem; }
     .footer__menu li:nth-child(1) a {
       margin-left: 3.6rem; }
   .footer__social-menu {
@@ -287,7 +287,7 @@ button, input, select, textarea {
       flex-direction: row;
       align-items: center; }
     .footer__social-menu li {
-      margin-left: 2.2rem; }
+      margin-left: 2.4rem; }
       .footer__social-menu li:first-child {
         margin-left: 0; }
 
@@ -828,6 +828,9 @@ button, input, select, textarea {
       padding-bottom: 1.4rem;
       padding-left: 3.275rem;
       padding-right: 3.275rem; }
+
+.page-404 .thanks-main__center-block .default-btn__wrap {
+  margin-top: 11.7rem; }
 
 .thanks-page {
   background-image: url(../img/thanks-bg.png);
