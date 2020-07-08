@@ -644,7 +644,9 @@ button, input, select, textarea {
     font-family: "National-2 Regular", sans-serif; }
 
 .contact-page .contact-main {
-  margin: 12rem 0rem 8rem 0rem; }
+  margin: 12rem 0rem 8rem 0rem;
+  padding-right: 15px;
+  padding-bottom: 15px; }
   .contact-page .contact-main .container {
     max-width: 1200px; }
   .contact-page .contact-main h3 {
@@ -850,6 +852,11 @@ button, input, select, textarea {
 @media screen and (max-width: 767px) {
   .footer__email-link {
     margin-left: 0; }
+  .contact-page .contact-main #map {
+    height: 30rem; }
+  .contact-page .contact-main {
+    padding-right: 0px;
+    padding-left: 0px; }
   .footer {
     padding: 3.25rem 0rem; }
     .footer-col {
