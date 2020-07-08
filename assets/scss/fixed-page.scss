@@ -7,7 +7,7 @@
     background-position-x: center;
     background-position-y: center;
     .thanks-main__center-block{
-        margin-top: 29.8rem;
+        margin-top: 37rem;
     }
     .main-description{
         margin-top: 1.5rem;
@@ -28,4 +28,9 @@
 .thanks-page{
     background-image: url(../img/thanks-bg.png);
     background-position-y: bottom;
+    .main-description{
+        font-family: $font-bold;
+        color: $main-color;
+        margin-bottom: 1.9rem;
+    }
 }

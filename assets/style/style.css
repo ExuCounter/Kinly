@@ -803,7 +803,7 @@ button, input, select, textarea {
   background-position-x: center;
   background-position-y: center; }
   .page-fixed .thanks-main__center-block {
-    margin-top: 29.8rem; }
+    margin-top: 37rem; }
   .page-fixed .main-description {
     margin-top: 1.5rem; }
   .page-fixed .default-btn__wrap {
@@ -819,6 +819,10 @@ button, input, select, textarea {
 .thanks-page {
   background-image: url(../img/thanks-bg.png);
   background-position-y: bottom; }
+  .thanks-page .main-description {
+    font-family: "National-2 Bold", sans-serif;
+    color: #280B56;
+    margin-bottom: 1.9rem; }
 
 .apply-main .main-title {
   margin-top: 12rem; }
