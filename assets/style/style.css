@@ -639,9 +639,9 @@ button, input, select, textarea {
 .contact-page .contact-main {
   margin: 12rem 0rem 8rem 0rem; }
   .contact-page .contact-main .container {
-    max-width: 1280px; }
+    max-width: 1200px; }
   .contact-page .contact-main h3 {
-    margin-top: 4rem; }
+    margin-top: 2.6rem; }
   .contact-page .contact-main .contact-phone {
     padding-bottom: 0.5rem;
     border-bottom: 3px solid #c1ecf9; }
@@ -649,7 +649,7 @@ button, input, select, textarea {
     height: 100%;
     width: 100%; }
   .contact-page .contact-main .content {
-    padding-bottom: 3rem; }
+    padding-bottom: 2.4rem; }
 
 .privacy-page h2 {
   padding: 12.2rem 0rem 3.5rem 0rem; }

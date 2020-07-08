@@ -69,13 +69,13 @@
                 <div class="col-12 col-md-6 pl-0 pr-0">
                     <div class="content">
                         <h2 class='text-left'>Contact</h2>
-                        <p class='mt-5'>
+                        <p class='mt-4'>
                             Want to get in touch? We love to hear from you. You can reach us by phone, email, or drop in at one of our solution centers for some coffee and a chat.
                         </p>
                         <h3>
                             Recruiter
                         </h3>
-                        <p class='mb-0 mt-3'>
+                        <p class='mb-0 mt-2'>
                             Voornaam Achternaam
                         </p>
                         <a href="mailto:hr@bedrijfsnaam.nl">hr@bedrijfsnaam.nl</a><br>
@@ -119,7 +119,7 @@
                                     Kastanjelaan 400 (Microlab)<br>
                                     5616 LZ Eindhoven
                                 </p>
-                                <a href='tel:088 652 6565' class='contact-phone'>+088 652 6565</a>
+                                <a href='tel:088 652 6565' class='contact-phone'>088 652 6565</a>
                             </div>
                         </div>
                     </div>
@@ -200,8 +200,13 @@
         
         function initialize() {
         var map;
-        var bounds = new google.maps.LatLngBounds();
-        var mapOptions = {
+        let pinColor = "8C80A6";
+        let bounds = new google.maps.LatLngBounds();
+        var pinImage = new google.maps.MarkerImage(`http://chart.apis.google.com/chart?chst=d_map_pin_letter&chld=%E2%80%A2|${pinColor}`,
+            new google.maps.Size(21, 34),
+            new google.maps.Point(0,0),
+            new google.maps.Point(10, 34));
+        const mapOptions = {
             mapTypeId: 'roadmap',
             styles: [
                 {
@@ -228,159 +233,164 @@
                 }
                 ]
                 },
-                {
-                "elementType": "labels.text.stroke",
-                "stylers": [
-                {
-                "color": "#f5f5f5"
-                }
-                ]
-                },
-                {
-                "featureType": "administrative.country",
-                "stylers": [
-                {
-                "color": "#767676"
-                }
-                ]
-                },
-                {
-                "featureType": "administrative.country",
-                "elementType": "labels.text",
-                "stylers": [
-                {
-                "color": "#8c80a6"
-                }
-                ]
-                },
-                {
-                "featureType": "administrative.land_parcel",
-                "elementType": "labels.text",
-                "stylers": [
-                {
-                "color": "#8c80a6"
-                }
-                ]
-                },
-                {
-                "featureType": "administrative.land_parcel",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                {
-                "color": "#bdbdbd"
-                }
-                ]
-                },
-                {
-                "featureType": "administrative.locality",
-                "elementType": "labels.text",
-                "stylers": [
-                {
-                "color": "#8c80a6"
-                }
-                ]
-                },
-                {
-                "featureType": "administrative.neighborhood",
-                "elementType": "labels.text",
-                "stylers": [
-                {
-                "color": "#8c80a6"
-                }
-                ]
-                },
-                {
-                "featureType": "administrative.province",
-                "elementType": "labels.text",
-                "stylers": [
-                {
-                "color": "#8c80a6"
-                }
-                ]
-                },
-                {
-                "featureType": "landscape",
-                "stylers": [
-                {
-                "color": "#f1f3f4"
-                }
-                ]
-                },
-                {
-                "featureType": "landscape",
-                "elementType": "labels.text",
-                "stylers": [
-                {
-                "color": "#8c80a6"
-                }
-                ]
-                },
-                {
-                "featureType": "landscape.man_made",
-                "elementType": "labels.text",
-                "stylers": [
-                {
-                "color": "#8c80a6"
-                }
-                ]
-                },
-                {
-                "featureType": "landscape.natural",
-                "elementType": "labels.text",
-                "stylers": [
-                {
-                "color": "#8c80a6"
-                }
-                ]
-                },
-                {
-                "featureType": "landscape.natural.landcover",
-                "elementType": "labels.text",
-                "stylers": [
-                {
-                "color": "#8c80a6"
-                }
-                ]
-                },
-                {
-                "featureType": "landscape.natural.terrain",
-                "elementType": "labels.text",
-                "stylers": [
-                {
-                "color": "#8c80a6"
-                }
-                ]
-                },
-                {
-                "featureType": "poi",
-                "elementType": "geometry",
-                "stylers": [
-                {
-                "color": "#eeeeee"
-                }
-                ]
-                },
-                {
-                "featureType": "poi",
-                "elementType": "labels.icon",
-                "stylers": [
-                {
-                "color": "#280b56"
-                },
-                {
-                "visibility": "on"
-                }
-                ]
-                },
-                {
-                "featureType": "poi",
-                "elementType": "labels.text.fill",
-                "stylers": [
-                {
-                "color": "#280b56"
-                }
-                ]
-                },
+                // {
+                // "elementType": "labels.text.stroke",
+                // "stylers": [
+                // {
+                // "color": "#f5f5f5"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "administrative.country",
+                // "stylers": [
+                // {
+                // "color": "#767676"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "administrative.country",
+                // "elementType": "labels.text",
+                // "stylers": [
+                // {
+                // "color": "#8c80a6"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "administrative.land_parcel",
+                // "elementType": "labels.text",
+                // "stylers": [
+                // {
+                // "color": "#8c80a6"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "administrative.land_parcel",
+                // "elementType": "labels.text.fill",
+                // "stylers": [
+                // {
+                // "color": "#bdbdbd"
+                // }
+                // ]
+                // },
+
+
+                // {
+                // "featureType": "administrative.locality",
+                // "elementType": "labels.text",
+                // "stylers": [
+                // {
+                // "color": "#8c80a6"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "administrative.neighborhood",
+                // "elementType": "labels.text",
+                // "stylers": [
+                // {
+                // "color": "#8c80a6"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "administrative.province",
+                // "elementType": "labels.text",
+                // "stylers": [
+                // {
+                // "color": "#8c80a6"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "landscape",
+                // "stylers": [
+                // {
+                // "color": "#f1f3f4"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "landscape",
+                // "elementType": "labels.text",
+                // "stylers": [
+                // {
+                // "color": "#8c80a6"
+                // }
+                // ]
+                // },
+                
+                // {
+                // "featureType": "landscape.man_made",
+                // "elementType": "labels.text",
+                // "stylers": [
+                // {
+                // "color": "#8c80a6"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "landscape.natural",
+                // "elementType": "labels.text",
+                // "stylers": [
+                // {
+                // "color": "#8c80a6"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "landscape.natural.landcover",
+                // "elementType": "labels.text",
+                // "stylers": [
+                // {
+                // "color": "#8c80a6"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "landscape.natural.terrain",
+                // "elementType": "labels.text",
+                // "stylers": [
+                // {
+                // "color": "#8c80a6"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "poi",
+                // "elementType": "geometry",
+                // "stylers": [
+                // {
+                // "color": "#eeeeee"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "poi",
+                // "elementType": "labels.icon",
+                // "stylers": [
+                // {
+                // "color": "#280b56"
+                // },
+                // {
+                // "visibility": "on"
+                // }
+                // ]
+                // },
+                // {
+                // "featureType": "poi",
+                // "elementType": "labels.text.fill",
+                // "stylers": [
+                // {
+                // "color": "#280b56"
+                // }
+                // ]
+                // },
+
+                
                 {
                 "featureType": "poi.park",
                 "elementType": "geometry",
@@ -529,6 +539,7 @@
             marker = new google.maps.Marker({
                 position: position,
                 map: map,
+                icon: pinImage,
                 title: markers[i][0],
             });
             
