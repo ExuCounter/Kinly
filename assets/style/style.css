@@ -842,6 +842,17 @@ button, input, select, textarea {
 .inputs-col__sm-top {
   margin-top: 3.8rem !important; }
 
+@media screen and (max-width: 1280px) {
+  .page-fixed {
+    position: relative;
+    height: 100%; }
+    .page-fixed .thanks-main__center-block {
+      top: 50vh;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      margin-top: 0; } }
+
 @media screen and (max-width: 991px) {
   html {
     font-size: 9px; }
