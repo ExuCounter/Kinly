@@ -22,6 +22,9 @@
                 color: $main-color;
             }
         }
+        &-tel{
+            font-family: $font-regular !important;
+        }
     }
     .vacancy-cards{
         .card{

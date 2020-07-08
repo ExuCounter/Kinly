@@ -565,6 +565,9 @@ button, input, select, textarea {
     text-decoration: none;
     color: #280B56; }
 
+.vacancy-page .content-tel {
+  font-family: "National-2 Regular", sans-serif !important; }
+
 .vacancy-page .vacancy-cards .card {
   border: none; }
   .vacancy-page .vacancy-cards .card:nth-child(1) {
