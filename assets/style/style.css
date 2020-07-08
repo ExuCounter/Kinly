@@ -919,13 +919,13 @@ button, input, select, textarea {
     right: 2.7rem; }
   .header-menu {
     position: fixed;
-    top: calc(100vh - 27rem);
     right: -10rem;
     z-index: 111;
     transform: translate(0);
-    transition: 0.4s ease-in-out; }
+    transition: 0.4s ease-in-out;
+    bottom: 7.8rem;
+    top: unset; }
     .header-menu.active {
-      top: calc(100vh - 27rem);
       right: 3rem; }
     .header-menu__container {
       bottom: 2.1rem; }
