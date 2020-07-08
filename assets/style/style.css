@@ -687,8 +687,9 @@ button, input, select, textarea {
 .apply-form {
   margin: 0rem 0rem 8rem 0rem; }
   .apply-form .inputs-col input, .apply-form .inputs-col textarea {
-    padding: 0.8rem 1rem;
-    width: 100%; }
+    padding: 0.35rem 1rem;
+    width: 100%;
+    font-size: 1.6rem; }
   .apply-form .inputs-col textarea {
     padding-bottom: 1.2rem; }
   .apply-form .inputs-col__wrap {
