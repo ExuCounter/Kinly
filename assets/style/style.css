@@ -988,7 +988,10 @@ button, input, select, textarea {
     margin-bottom: 5rem; }
   .vacancy-page .vacancy-cards .card:nth-child(1), .vacancy-page .vacancy-cards .card:nth-child(2) {
     padding-left: 15px;
-    padding-right: 15px; } }
+    padding-right: 15px; }
+  .vacancy-page .vacancy-cards .card:nth-child(2) {
+    order: -1;
+    margin-bottom: 2.5rem; } }
 
 @media screen and (max-width: 568px) {
   html {
