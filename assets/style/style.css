@@ -143,7 +143,8 @@ button, input, select, textarea {
       background-color: #FFF; }
   .burger-menu__inner {
     position: absolute;
-    left: 25%; }
+    left: 25%;
+    top: 50%; }
 
 .burger-menu span {
   position: absolute;
