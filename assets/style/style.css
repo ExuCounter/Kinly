@@ -587,7 +587,7 @@ button, input, select, textarea {
     display: flex;
     margin-top: 0rem; }
   .vacancy-page .content .submit-privacy-button__container_fixed.active {
-    display: none; }
+    display: none !important; }
 
 .vacancy-page .vacancy-cards .card {
   border: none; }
