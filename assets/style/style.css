@@ -409,7 +409,8 @@ button, input, select, textarea {
       .join-team-cards .card__inner-tags {
         font-size: 1.6rem;
         color: #8c80a6;
-        font-family: "National-2 Medium", sans-serif;
+        font-family: "National-2 Bold", sans-serif;
+        text-transform: uppercase;
         line-height: 2rem;
         margin-top: auto; }
       .join-team-cards .card__inner a {
