@@ -222,6 +222,25 @@
         let buttonNotFixed = document.querySelector('.submit-privacy-button__container');
         let buttonFixed = document.querySelector('.submit-privacy-button__container_fixed');
         window.onscroll = function(){
+            if(document.documentElement.offsetWidth > 768){
+                if(elemInViewport(buttonNotFixed, true)){
+                    buttonFixed.classList.add('active');
+                }
+                else{
+                    buttonFixed.classList.remove('active');
+                }
+            }
+            else{
+                if(elemInViewport(buttonNotFixed, false)){
+                    buttonFixed.classList.add('active');
+                }
+                else{
+                    buttonFixed.classList.remove('active');
+                }
+            }
+        }
+
+        if(document.documentElement.offsetWidth > 768){
             if(elemInViewport(buttonNotFixed, true)){
                 buttonFixed.classList.add('active');
             }
@@ -229,12 +248,13 @@
                 buttonFixed.classList.remove('active');
             }
         }
-
-        if(elemInViewport(buttonNotFixed, true)){
-            buttonFixed.classList.add('active');
-        }
         else{
-            buttonFixed.classList.remove('active');
+            if(elemInViewport(buttonNotFixed, true)){
+                buttonFixed.classList.add('active');
+            }
+            else{
+                buttonFixed.classList.remove('active');
+            }
         }
 
 
