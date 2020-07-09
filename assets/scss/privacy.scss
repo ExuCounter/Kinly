@@ -3,12 +3,15 @@
         padding: 12.2rem 0rem 3.5rem 0rem;
     }
     .content{
-        padding-bottom: 10rem;
+        padding-bottom: 0.7rem;
         margin-bottom: 8rem;
         padding-left: 3rem;
         padding-right: 3rem;
-        span, p{
+        span, p, .link-title{
             margin-bottom: 1.7rem;
+        }
+        .link-title{
+            display: block;
         }
     }
 }

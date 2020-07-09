@@ -669,12 +669,14 @@ button, input, select, textarea {
   padding: 12.2rem 0rem 3.5rem 0rem; }
 
 .privacy-page .content {
-  padding-bottom: 10rem;
+  padding-bottom: 0.7rem;
   margin-bottom: 8rem;
   padding-left: 3rem;
   padding-right: 3rem; }
-  .privacy-page .content span, .privacy-page .content p {
+  .privacy-page .content span, .privacy-page .content p, .privacy-page .content .link-title {
     margin-bottom: 1.7rem; }
+  .privacy-page .content .link-title {
+    display: block; }
 
 .apply-main h2 {
   padding-bottom: 1.5rem;
@@ -839,8 +841,9 @@ button, input, select, textarea {
   background-position-y: bottom; }
   .thanks-page .main-description {
     font-family: "National-2 Bold", sans-serif;
-    color: #280B56;
-    margin-bottom: 1.9rem; }
+    color: #280B56; }
+  .thanks-page .default-btn__wrap {
+    margin-top: 7.9rem; }
 
 .apply-main .main-title {
   margin-top: 12rem; }
