@@ -21,6 +21,7 @@
             }
             textarea{
                 padding-bottom: 1.2rem;
+                height: 14.2rem;
             }
             &__wrap{
                 background-color: $main-color;
@@ -89,10 +90,10 @@
                     }
                 }
                 &.textarea__block{
-                    margin-top: 1.2rem;
+                    margin-top: 1.5rem;
                 }
                 &.textarea__under-block{
-                    margin-top: 0.9rem;
+                    margin-top: 1.1rem;
                 }
             }
             .form-submit-btn__container{
