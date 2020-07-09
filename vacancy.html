@@ -228,8 +228,15 @@
             else{
                 buttonFixed.classList.remove('active');
             }
-            console.log(elemInViewport(buttonNotFixed, false));
         }
+
+        if(elemInViewport(buttonNotFixed, true)){
+            buttonFixed.classList.add('active');
+        }
+        else{
+            buttonFixed.classList.remove('active');
+        }
+
 
         function elemInViewport(elem,full) {
             var box = elem.getBoundingClientRect();
