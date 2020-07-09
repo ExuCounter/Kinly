@@ -355,15 +355,16 @@ button, input, select, textarea {
     flex-direction: row; }
     .select-team__wrap button {
       white-space: nowrap;
-      padding-left: 4rem;
-      padding-right: 4rem;
-      padding-top: 1.3rem;
-      padding-bottom: 1.3rem;
+      padding-left: 3.675rem;
+      padding-right: 3.675rem;
+      padding-top: 1.45rem;
+      padding-bottom: 1.45rem;
       font-family: "National-2 Bold", sans-serif; }
   .select-team__select-input {
     display: block;
     width: 100%;
-    padding: 1.075rem 1.6rem;
+    padding: 0.925rem 1.7rem;
+    margin: 0.15rem 0rem;
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.5;
@@ -373,7 +374,7 @@ button, input, select, textarea {
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .55rem;
-    margin-right: 2.8rem;
+    margin-right: 2.4rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     cursor: pointer;
     background: url(../img/arrow-down.svg) no-repeat right #fff;
