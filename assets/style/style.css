@@ -561,7 +561,7 @@ button, input, select, textarea {
 .vacancy-page .content a {
   margin-top: 3.8rem;
   display: flex;
-  padding: 1.45rem 5rem;
+  padding: 1.45rem 5.519rem;
   font-family: "National-2 Bold", sans-serif; }
   .vacancy-page .content a:hover {
     text-decoration: none;
