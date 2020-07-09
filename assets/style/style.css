@@ -742,7 +742,8 @@ button, input, select, textarea {
       font-size: 1.6rem;
       font-family: "National-2 Bold", sans-serif;
       cursor: pointer; }
-      .apply-form .inputs-col__block label p {
+      .apply-form .inputs-col__block label span {
+        display: block;
         font-family: "National-2 Regular", sans-serif;
         font-size: 1.2rem; }
     .apply-form .inputs-col__block input[type='file'] {
