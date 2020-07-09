@@ -306,6 +306,10 @@ button, input, select, textarea {
 .home-video {
   margin-top: 1.75rem; }
 
+.home video {
+  width: 100% !important;
+  height: 100% !important; }
+
 .home-page .header-main {
   background: url("../img/personal.png"); }
 
