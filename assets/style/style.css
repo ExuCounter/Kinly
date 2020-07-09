@@ -565,7 +565,7 @@ button, input, select, textarea {
   font-family: "National-2 Bold", sans-serif; }
   .vacancy-page .content a:hover {
     text-decoration: none;
-    color: #280B56; }
+    color: #FFF; }
 
 .vacancy-page .content p, .vacancy-page .content h3, .vacancy-page .content span {
   line-height: 1.3; }
