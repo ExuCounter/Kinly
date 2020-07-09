@@ -573,6 +573,21 @@ button, input, select, textarea {
 .vacancy-page .content-tel {
   font-family: "National-2 Regular", sans-serif !important; }
 
+.vacancy-page .content .submit-privacy-button__container_fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.4rem; }
+  .vacancy-page .content .submit-privacy-button__container_fixed a {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 0rem; }
+  .vacancy-page .content .submit-privacy-button__container_fixed.active {
+    display: none !important; }
+
 .vacancy-page .vacancy-cards .card {
   border: none; }
   .vacancy-page .vacancy-cards .card:nth-child(1) {

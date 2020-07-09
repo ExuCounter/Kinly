@@ -96,8 +96,13 @@
                     Send your resume (with a photo) and letter of motivation (in English!) to recruitment.nl@kinly.com. Would you like to know more about the job before applying?
                 </p>
                 <p>You can always call Claudia Kraak, <a href='tel:(088) 652 65 65.' class='d-inline content-tel p-0'>(088) 652 65 65.</a></p>
-                <div class="d-flex justify-content-center">
-                    <a href='#' class="default-btn">
+                <div class="d-flex justify-content-center submit-privacy-button__container">
+                    <a href='#' class="default-btn submit-privacy-button">
+                        Apply now
+                    </a>
+                </div>
+                <div class="d-flex justify-content-center submit-privacy-button__container_fixed">
+                    <a href='#' class="default-btn submit-privacy-button">
                         Apply now
                     </a>
                 </div>
@@ -212,6 +217,35 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let buttonNotFixed = document.querySelector('.submit-privacy-button__container');
+        let buttonFixed = document.querySelector('.submit-privacy-button__container_fixed');
+        window.onscroll = function(){
+            if(elemInViewport(buttonNotFixed, true)){
+                buttonFixed.classList.add('active');
+            }
+            else{
+                buttonFixed.classList.remove('active');
+            }
+            console.log(elemInViewport(buttonNotFixed, false));
+        }
+
+        function elemInViewport(elem,full) {
+            var box = elem.getBoundingClientRect();
+            var top = box.top;
+            var left = box.left;
+            var bottom = box.bottom;
+            var right  = box.right;
+            var width = document.documentElement.clientWidth;
+            var height = document.documentElement.clientHeight;
+            var maxWidth = 0;
+            var maxHeight = 0;
+            if(full) { maxWidth = right - left; maxHeight = bottom - top};
+            return Math.min(height,bottom)- Math.max(0,top) >= maxHeight && Math.min(width,right)- Math.max(0,left)>= maxWidth
+        }
+
+    </script>
     
     <script src='assets/js/script.js'></script>
 </body>
