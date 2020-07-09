@@ -13,7 +13,6 @@
     }
     .content{
         a{
-            margin-top: 3.8rem;
             display: flex;
             padding: 1.45rem 5.519rem;
             font-family: $font-bold;
@@ -27,6 +26,9 @@
         }
         &-tel{
             font-family: $font-regular !important;
+        }
+        .submit-privacy-button__container{
+            margin-top: 3.8rem;
         }
         .submit-privacy-button__container_fixed{
             position: fixed;

@@ -559,7 +559,6 @@ button, input, select, textarea {
   padding: 4.3rem 0rem 8rem 0rem; }
 
 .vacancy-page .content a {
-  margin-top: 3.8rem;
   display: flex;
   padding: 1.45rem 5.519rem;
   font-family: "National-2 Bold", sans-serif; }
@@ -572,6 +571,9 @@ button, input, select, textarea {
 
 .vacancy-page .content-tel {
   font-family: "National-2 Regular", sans-serif !important; }
+
+.vacancy-page .content .submit-privacy-button__container {
+  margin-top: 3.8rem; }
 
 .vacancy-page .content .submit-privacy-button__container_fixed {
   position: fixed;
