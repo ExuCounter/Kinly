@@ -177,6 +177,7 @@
             }
         }
     }
+
 }
 
 @media screen and (max-width: 568px){
@@ -187,6 +188,7 @@
         &-block{
             justify-content: center;
             text-align: center;
+            padding-right: 0;
         }
     }
     .select-team__wrap{

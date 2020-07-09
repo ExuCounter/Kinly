@@ -1003,7 +1003,8 @@ button, input, select, textarea {
     font-size: 10px; }
   .reasons-to-work__wrap-block {
     justify-content: center;
-    text-align: center; }
+    text-align: center;
+    padding-right: 0; }
   .select-team__wrap {
     display: flex;
     flex-direction: column;
