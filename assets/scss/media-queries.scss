@@ -140,8 +140,11 @@
         transition: 0.4s ease-in-out;
         bottom: 7.8rem;
         top: unset;
+        height: auto;
         &.active{
+            position: fixed;
             right: 3rem;
+            top: unset;
         }
         &__container{
             bottom: 2.1rem;

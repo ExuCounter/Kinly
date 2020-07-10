@@ -168,14 +168,13 @@ button, input, select, textarea {
     transform: rotate(-45deg); } }
 
 .header-menu {
-  position: fixed;
-  top: 7.5rem;
+  position: absolute;
+  top: 6.7rem;
   margin-left: -9.7rem;
   transition: 0.6s ease-in-out;
   height: 0;
-  transform: translateY(-200%);
-  opacity: 0;
-  overflow: hidden; }
+  transform: translateY(-400px);
+  opacity: 0; }
   .header-menu__container {
     display: flex;
     position: fixed;
@@ -975,9 +974,12 @@ button, input, select, textarea {
     transform: translate(0);
     transition: 0.4s ease-in-out;
     bottom: 7.8rem;
-    top: unset; }
+    top: unset;
+    height: auto; }
     .header-menu.active {
-      right: 3rem; }
+      position: fixed;
+      right: 3rem;
+      top: unset; }
     .header-menu__container {
       bottom: 2.1rem; }
   .header-language-switcher {

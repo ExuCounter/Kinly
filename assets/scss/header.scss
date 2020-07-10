@@ -1,13 +1,12 @@
 .header{
     &-menu{
-        position: fixed;
-        top: 7.5rem;
+        position: absolute;
+        top: 6.7rem;
         margin-left: -9.7rem;
         transition: 0.6s ease-in-out;
         height: 0;
-        transform: translateY(-200%);
+        transform: translateY(-400px);
         opacity: 0;
-        overflow: hidden;
         &__container{
             display: flex;
             position: fixed;
